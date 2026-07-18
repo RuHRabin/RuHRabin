@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e2327,100:2b6cb0&height=220&section=header&text=Hi%2C%20I'm%20Rabin%20👋&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=aka%20RuHRabin%20•%20lifelong%20learner%20•%20curious%20by%20default&descAlignY=55&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e2327,100:2b6cb0&height=220&section=header&text=Hi%2C%20I'm%20Rabin%20👋&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=%20RuHRabin%20•%20lifelong%20learner%20•%20curious%20by%20default&descAlignY=55&descSize=18" width="100%"/>
 
 <a href="https://github.com/RuHRabin">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=4FD6FF&center=true&vCenter=true&width=600&lines=Driven+by+curiosity...;Solving+complex+problems+for+fun;Currently+diving+into+ML+%26+Simulation;Ask+me+about+science+%26+tech+%F0%9F%94%AC" alt="Typing SVG" />
@@ -12,7 +12,7 @@
 
 ## 🎯 About Me
 
-I'm **Rabin (RuHRabin)** — a lifelong learner driven by curiosity, passionate about solving complex problems, and committed to continuous growth.
+I'm **Rabin** — a lifelong learner driven by curiosity, passionate about solving complex problems, and committed to continuous growth.
 
 ```yaml
 me:
