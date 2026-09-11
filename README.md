@@ -55,13 +55,9 @@ See more of my work on [GitHub](https://github.com/RuHRabin?tab=repositories).
 
 <br/>
 
-## 📈 GitHub Activity
+## 📊 GitHub Stats
 
 <div align="center">
-
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=RuHRabin&bg_color=1e2327&color=4fd6ff&line=4fd6ff&point=ffffff&area=true&area_color=4fd6ff&hide_border=true" />
-
-<br/><br/>
 
 <img height="165" src="https://github-stats-extended.vercel.app/api?username=RuHRabin&show_icons=true&theme=dark&hide_border=true&bg_color=1e2327&title_color=4FD6FF&icon_color=4FD6FF&text_color=ffffff&count_private=true" />
 <img height="165" src="https://github-stats-extended.vercel.app/api/top-langs/?username=RuHRabin&layout=compact&theme=dark&hide_border=true&bg_color=1e2327&title_color=4FD6FF&text_color=ffffff&langs_count=8" />
