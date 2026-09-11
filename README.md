@@ -47,6 +47,7 @@ Whatever I have pinned on GitHub shows up here automatically — this section re
 <div align="center">
 
 <a href="https://github.com/RuHRabin/Remove-Metadata-from-image-and-videos-on-Linux-"><img src="https://github-stats-extended.vercel.app/api/pin/?username=RuHRabin&repo=Remove-Metadata-from-image-and-videos-on-Linux-&theme=dark&hide_border=true&bg_color=1e2327&title_color=4FD6FF&text_color=ffffff&icon_color=4FD6FF" /></a>
+<a href="https://github.com/RuHRabin/xkb-avro"><img src="https://github-stats-extended.vercel.app/api/pin/?username=RuHRabin&repo=xkb-avro&theme=dark&hide_border=true&bg_color=1e2327&title_color=4FD6FF&text_color=ffffff&icon_color=4FD6FF" /></a>
 
 </div>
 <!--END_SECTION:pinned-->
