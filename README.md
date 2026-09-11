@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e2327,100:2b6cb0&height=200&section=header&text=Hi%2C%20I'm%20Rabin%20👋&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=lifelong%20learner%20•%20curious%20by%20default&descAlignY=58&descSize=17" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e2327,100:2b6cb0&height=200&section=header&text=Hi%2C%20I%20am%20Rabin%20👋&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=lifelong%20learner%2C%20curious%20by%20default&descAlignY=58&descSize=17" width="100%"/>
 
 <a href="https://github.com/RuHRabin">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&pause=1200&color=4FD6FF&center=true&vCenter=true&width=560&lines=Turning+curiosity+into+code;Deep+in+Machine+Learning+%26+Simulation;Breaking+things+down+to+understand+them;Always+building%2C+always+learning" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=21&pause=1200&color=4FD6FF&center=true&vCenter=true&width=560&lines=Turning+curiosity+into+code;Deep+in+Machine+Learning+%26+Simulation;Breaking+things+down+to+understand+them;Always+building%2C+always+learning" alt="Typing SVG" />
 </a>
 
 </div>
@@ -44,7 +44,7 @@ rabin:
 <div align="center">
 
 <a href="https://github.com/RuHRabin/Remove-Metadata-from-image-and-videos-on-Linux-">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=RuHRabin&repo=Remove-Metadata-from-image-and-videos-on-Linux-&theme=dark&hide_border=true&bg_color=1e2327&title_color=4FD6FF&text_color=ffffff&icon_color=4FD6FF" />
+  <img src="https://github-stats-extended.vercel.app/api/pin/?username=RuHRabin&repo=Remove-Metadata-from-image-and-videos-on-Linux-&theme=dark&hide_border=true&bg_color=1e2327&title_color=4FD6FF&text_color=ffffff&icon_color=4FD6FF" />
 </a>
 
 </div>
@@ -55,12 +55,16 @@ See more of my work on [GitHub](https://github.com/RuHRabin?tab=repositories).
 
 <br/>
 
-## 📊 GitHub Stats
+## 📈 GitHub Activity
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=RuHRabin&show_icons=true&theme=dark&hide_border=true&bg_color=1e2327&title_color=4FD6FF&icon_color=4FD6FF&text_color=ffffff&count_private=true" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RuHRabin&layout=compact&theme=dark&hide_border=true&bg_color=1e2327&title_color=4FD6FF&text_color=ffffff&langs_count=8" />
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=RuHRabin&bg_color=1e2327&color=4fd6ff&line=4fd6ff&point=ffffff&area=true&area_color=4fd6ff&hide_border=true" />
+
+<br/><br/>
+
+<img height="165" src="https://github-stats-extended.vercel.app/api?username=RuHRabin&show_icons=true&theme=dark&hide_border=true&bg_color=1e2327&title_color=4FD6FF&icon_color=4FD6FF&text_color=ffffff&count_private=true" />
+<img height="165" src="https://github-stats-extended.vercel.app/api/top-langs/?username=RuHRabin&layout=compact&theme=dark&hide_border=true&bg_color=1e2327&title_color=4FD6FF&text_color=ffffff&langs_count=8" />
 
 </div>
 
