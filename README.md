@@ -25,10 +25,7 @@ me:
 
 <div align="center">
 
-[![Website](https://img.shields.io/badge/rabin.pro.bd-1e2327?style=for-the-badge&logo=googlechrome&logoColor=4FD6FF)](https://rabin.pro.bd)
-[![X](https://img.shields.io/badge/@RuHRabin-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/RuHRabin)
-[![Facebook](https://img.shields.io/badge/M.RakibUlHasanRabin-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/M.RakibUlHasanRabin)
-[![Email](https://img.shields.io/badge/contact%40rabin.pro.bd-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@rabin.pro.bd)
+  [![X](https://img.shields.io/badge/@RuHRabin-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/RuHRabin)
 
 </div>
 
