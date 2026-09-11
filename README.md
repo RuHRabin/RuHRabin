@@ -39,17 +39,17 @@ rabin:
 
 <br/>
 
-## 🌟 Featured Project
+## 🌟 Featured Projects
 
+Whatever I have pinned on GitHub shows up here automatically — this section re-syncs itself once a day.
+
+<!--START_SECTION:pinned-->
 <div align="center">
 
-<a href="https://github.com/RuHRabin/Remove-Metadata-from-image-and-videos-on-Linux-">
-  <img src="https://github-stats-extended.vercel.app/api/pin/?username=RuHRabin&repo=Remove-Metadata-from-image-and-videos-on-Linux-&theme=dark&hide_border=true&bg_color=1e2327&title_color=4FD6FF&text_color=ffffff&icon_color=4FD6FF" />
-</a>
+<a href="https://github.com/RuHRabin/Remove-Metadata-from-image-and-videos-on-Linux-"><img src="https://github-stats-extended.vercel.app/api/pin/?username=RuHRabin&repo=Remove-Metadata-from-image-and-videos-on-Linux-&theme=dark&hide_border=true&bg_color=1e2327&title_color=4FD6FF&text_color=ffffff&icon_color=4FD6FF" /></a>
 
 </div>
-
-A small, fully offline toolkit of Linux commands for stripping metadata from images and videos — free, open source, and built because your files shouldn't share more than you intend.
+<!--END_SECTION:pinned-->
 
 See more of my work on [GitHub](https://github.com/RuHRabin?tab=repositories).
 
