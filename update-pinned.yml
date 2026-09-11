@@ -1,0 +1,30 @@
+name: Sync Pinned Projects
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # every day at 06:00 UTC
+  workflow_dispatch: {}    # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-pinned:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync pinned projects into README.md
+        env:
+          GH_TOKEN: ${{ secrets.PINNED_REPOS_PAT }}
+          GH_USERNAME: RuHRabin
+        run: python3 scripts/update_pinned.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "chore: sync pinned projects"
+          git push
