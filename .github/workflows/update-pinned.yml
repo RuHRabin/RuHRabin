@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
-      - name: Sync pinned projects into README.md
+      - name: Sync pinned + recently active repos into README.md
         env:
           GH_TOKEN: ${{ secrets.PINNED_REPOS_PAT }}
           GH_USERNAME: RuHRabin
@@ -26,5 +26,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git diff --cached --quiet || git commit -m "chore: sync pinned projects"
+          git diff --cached --quiet || git commit -m "chore: sync pinned + recent repos"
           git push
