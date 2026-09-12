@@ -28,10 +28,19 @@ STREAK_START, STREAK_END = "<!--START_SECTION:streak-->", "<!--END_SECTION:strea
 # ---- palette (matches README) -------------------------------------------
 CARD_BG = "#262c31"
 CARD_STROKE = "#333a40"
-ACCENT = "#E3B341"
+ACCENT_BLUE = "#3B82F6"
+ACCENT_CYAN = "#22D3EE"
+ACCENT_GREEN = "#34D399"
+GRADIENT_DEF = (
+    '<linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">'
+    '<stop offset="0%" stop-color="#3B82F6"/>'
+    '<stop offset="50%" stop-color="#22D3EE"/>'
+    '<stop offset="100%" stop-color="#34D399"/>'
+    "</linearGradient>"
+)
 TITLE_COLOR = "#f0ece4"
 DESC_COLOR = "#9aa4ad"
-META_COLOR = "#E3B341"
+META_COLOR = "#22D3EE"
 FONT_STACK = "-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif"
 
 CARD_W, CARD_H, GAP, COLS = 336, 108, 16, 2
@@ -235,6 +244,7 @@ def render_board(items):
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" font-family="{FONT_STACK}">',
+        f'<defs>{GRADIENT_DEF}</defs>',
     ]
 
     for i, item in enumerate(items):
@@ -265,7 +275,7 @@ def render_board(items):
             f'fill="{CARD_BG}" stroke="{CARD_STROKE}" stroke-width="1"/>'
         )
         parts.append(
-            f'<line x1="0" y1="10" x2="0" y2="{CARD_H-10}" stroke="{ACCENT}" '
+            f'<line x1="0" y1="10" x2="0" y2="{CARD_H-10}" stroke="url(#accentGrad)" '
             f'stroke-width="3" stroke-linecap="round" '
             f'stroke-dasharray="{CARD_H-20}" stroke-dashoffset="{CARD_H-20}">'
             f'<animate attributeName="stroke-dashoffset" from="{CARD_H-20}" to="0" '
@@ -295,7 +305,7 @@ def render_stat_strip(current_streak, longest_streak, total_contributions):
     cols = [
         (str(current_streak), "current streak"),
         (str(longest_streak), "longest streak"),
-        (str(total_contributions), "total contributions"),
+        (str(total_contributions), "all-time contributions"),
     ]
     width, height = 688, 128
     col_w = width / 3
@@ -303,6 +313,7 @@ def render_stat_strip(current_streak, longest_streak, total_contributions):
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" font-family="{FONT_STACK}">',
+        f'<defs>{GRADIENT_DEF}</defs>',
         f'<rect x="0" y="0" width="{width}" height="{height}" rx="10" '
         f'fill="{CARD_BG}" stroke="{CARD_STROKE}" stroke-width="1"/>',
     ]
@@ -330,7 +341,7 @@ def render_stat_strip(current_streak, longest_streak, total_contributions):
         )
         parts.append(
             f'<text x="0" y="0" font-size="34" font-weight="700" '
-            f'fill="{ACCENT}" text-anchor="middle">{esc(value)}</text>'
+            f'fill="url(#accentGrad)" text-anchor="middle">{esc(value)}</text>'
         )
         parts.append(
             f'<text x="0" y="24" font-size="11" fill="{DESC_COLOR}" '
