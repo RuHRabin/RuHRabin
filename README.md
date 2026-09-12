@@ -1,5 +1,7 @@
 # Rabin
 
+<img src="assets/status.svg" alt="Status: Focusing" />
+
 lifelong learner, currently deep in machine learning and simulation
 
 [rabin.pro.bd](https://rabin.pro.bd) · [contact@rabin.pro.bd](mailto:contact@rabin.pro.bd) · [@RuHRabin](https://x.com/RuHRabin)
@@ -10,7 +12,7 @@ I like taking things apart to see how they actually work. Most days that means a
 
 ### Tools I reach for
 
-<img src="https://skillicons.dev/icons?i=python,linux,bash,git,github,tensorflow,pytorch,jupyter,numpy&theme=dark" />
+<img src="https://skillicons.dev/icons?i=py,linux,bash,git,github,tensorflow,pytorch,sklearn,anaconda&theme=dark" />
 
 ### Pinned
 
