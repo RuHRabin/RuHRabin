@@ -2,6 +2,8 @@
 
 # Rabin
 
+[![Sync status](https://github.com/RuHRabin/RuHRabin/actions/workflows/update-pinned.yml/badge.svg)](https://github.com/RuHRabin/RuHRabin/actions/workflows/update-pinned.yml)
+
 <img src="assets/status.svg" alt="Status: Focusing" />
 
 lifelong learner, currently deep in machine learning and simulation
