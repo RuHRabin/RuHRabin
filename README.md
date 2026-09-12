@@ -1,3 +1,5 @@
+<img src="assets/bird.svg" width="100%" alt="" />
+
 # Rabin
 
 <img src="assets/status.svg" alt="Status: Focusing" />
@@ -40,5 +42,7 @@ I like taking things apart to see how they actually work. Most days that means a
 </div>
 
 ---
+
+<img src="assets/bird.svg" width="100%" alt="" />
 
 More on [GitHub](https://github.com/RuHRabin?tab=repositories).
