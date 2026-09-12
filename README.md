@@ -32,8 +32,8 @@ I like taking things apart to see how they actually work. Most days that means a
 
 <div align="center">
 
-<img height="165" src="https://github-stats-extended.vercel.app/api?username=RuHRabin&show_icons=true&theme=dark&hide_border=true&bg_color=1e2327&title_color=E3B341&icon_color=E3B341&text_color=ffffff&count_private=true" />
-<img height="165" src="https://github-stats-extended.vercel.app/api/top-langs/?username=RuHRabin&layout=compact&theme=dark&hide_border=true&bg_color=1e2327&title_color=E3B341&text_color=ffffff&langs_count=8" />
+<img height="165" src="https://github-stats-extended.vercel.app/api?username=RuHRabin&show_icons=true&theme=dark&hide_border=true&bg_color=1e2327&title_color=22D3EE&icon_color=22D3EE&text_color=ffffff&count_private=true" />
+<img height="165" src="https://github-stats-extended.vercel.app/api/top-langs/?username=RuHRabin&layout=compact&theme=dark&hide_border=true&bg_color=1e2327&title_color=22D3EE&text_color=ffffff&langs_count=8" />
 
 </div>
 
