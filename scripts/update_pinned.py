@@ -1,8 +1,9 @@
 """
-Pulls live data from GitHub (pinned repos + recently pushed-to repos) and
-renders two custom, self-contained SVG tile boards — no third-party widget
-service involved, so nothing here can go down the way the old activity
-graph did. Each board has its own hand-built staggered reveal animation.
+Pulls live data from GitHub (pinned repos, recently pushed-to repos, and
+contribution streaks) and renders three custom, self-contained SVG boards —
+no third-party widget service involved, so nothing here can go down the way
+the old activity graph did. Each board has its own hand-built reveal
+animation.
 
 Runs inside .github/workflows/update-pinned.yml — nothing here needs to be
 edited by hand.
@@ -13,7 +14,7 @@ import os
 import re
 import sys
 import urllib.request
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 TOKEN = os.environ["GH_TOKEN"]
 USERNAME = os.environ.get("GH_USERNAME", "RuHRabin")
@@ -22,9 +23,9 @@ ASSETS_DIR = "assets"
 
 PINNED_START, PINNED_END = "<!--START_SECTION:pinned-->", "<!--END_SECTION:pinned-->"
 RECENT_START, RECENT_END = "<!--START_SECTION:recent-->", "<!--END_SECTION:recent-->"
+STREAK_START, STREAK_END = "<!--START_SECTION:streak-->", "<!--END_SECTION:streak-->"
 
 # ---- palette (matches README) -------------------------------------------
-BG = "#1e2327"
 CARD_BG = "#262c31"
 CARD_STROKE = "#333a40"
 ACCENT = "#E3B341"
@@ -35,9 +36,10 @@ FONT_STACK = "-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-ser
 
 CARD_W, CARD_H, GAP, COLS = 336, 108, 16, 2
 
-QUERY = """
+MAIN_QUERY = """
 query($login: String!) {
   user(login: $login) {
+    createdAt
     pinnedItems(first: 6, types: REPOSITORY) {
       nodes {
         ... on Repository {
@@ -62,9 +64,26 @@ query($login: String!) {
 }
 """
 
+CONTRIB_QUERY = """
+query($login: String!, $from: DateTime!, $to: DateTime!) {
+  user(login: $login) {
+    contributionsCollection(from: $from, to: $to) {
+      contributionCalendar {
+        weeks {
+          contributionDays {
+            date
+            contributionCount
+          }
+        }
+      }
+    }
+  }
+}
+"""
 
-def fetch_data():
-    payload = json.dumps({"query": QUERY, "variables": {"login": USERNAME}}).encode()
+
+def graphql(query, variables):
+    payload = json.dumps({"query": query, "variables": variables}).encode()
     req = urllib.request.Request(
         "https://api.github.com/graphql",
         data=payload,
@@ -78,7 +97,7 @@ def fetch_data():
         data = json.load(resp)
     if "errors" in data:
         sys.exit(f"GraphQL error: {data['errors']}")
-    return data["data"]["user"]
+    return data["data"]
 
 
 def humanize(iso_ts):
@@ -94,7 +113,69 @@ def humanize(iso_ts):
     return f"{months} month{'s' if months != 1 else ''} ago"
 
 
-# ---- SVG tile board -------------------------------------------------------
+# ---- contribution streaks --------------------------------------------------
+
+def fetch_all_contribution_days(created_at_iso):
+    """Walks year by year from account creation to now and returns a
+    {'YYYY-MM-DD': contributionCount} map covering the full account history."""
+    created_year = int(created_at_iso[:4])
+    now = datetime.now(timezone.utc)
+
+    days = {}
+    for year in range(created_year, now.year + 1):
+        year_start = datetime(year, 1, 1, tzinfo=timezone.utc)
+        year_end = datetime(year + 1, 1, 1, tzinfo=timezone.utc)
+        to_dt = min(year_end, now)
+        if to_dt <= year_start:
+            continue
+        data = graphql(
+            CONTRIB_QUERY,
+            {
+                "login": USERNAME,
+                "from": year_start.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "to": to_dt.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            },
+        )
+        weeks = data["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
+        for week in weeks:
+            for day in week["contributionDays"]:
+                days[day["date"]] = day["contributionCount"]
+
+    return days
+
+
+def compute_streaks(day_counts):
+    if not day_counts:
+        return 0, 0, 0
+
+    sorted_dates = sorted(day_counts.keys())
+    total = sum(day_counts.values())
+
+    cursor = date.fromisoformat(sorted_dates[-1])
+    # Today may simply not be over yet -- don't count a zero "today" as a
+    # broken streak, just start counting from yesterday instead.
+    if day_counts.get(cursor.isoformat(), 0) == 0:
+        cursor -= timedelta(days=1)
+
+    current = 0
+    while day_counts.get(cursor.isoformat(), 0) > 0:
+        current += 1
+        cursor -= timedelta(days=1)
+
+    longest, run, prev_date = 0, 0, None
+    for d_str in sorted_dates:
+        d = date.fromisoformat(d_str)
+        if day_counts[d_str] > 0:
+            run = run + 1 if prev_date and d == prev_date + timedelta(days=1) and day_counts.get(prev_date.isoformat(), 0) > 0 else 1
+            longest = max(longest, run)
+        else:
+            run = 0
+        prev_date = d
+
+    return current, longest, total
+
+
+# ---- SVG rendering ----------------------------------------------------------
 
 def esc(s):
     return (
@@ -133,8 +214,8 @@ def truncate_lines(lines, max_lines, max_chars):
     return kept
 
 
-def render_empty_board(message):
-    width, height = 2 * CARD_W + GAP, 64
+def render_empty_board(message, width=None, height=64):
+    width = width or (2 * CARD_W + GAP)
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" font-family="{FONT_STACK}">
 <rect width="{width}" height="{height}" rx="10" fill="{CARD_BG}" stroke="{CARD_STROKE}"/>
 <text x="{width/2}" y="{height/2+5}" font-size="13" fill="{DESC_COLOR}" text-anchor="middle">{esc(message)}</text>
@@ -210,6 +291,57 @@ def render_board(items):
     return "\n".join(parts)
 
 
+def render_stat_strip(current_streak, longest_streak, total_contributions):
+    cols = [
+        (str(current_streak), "current streak"),
+        (str(longest_streak), "longest streak"),
+        (str(total_contributions), "total contributions"),
+    ]
+    width, height = 688, 128
+    col_w = width / 3
+
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
+        f'viewBox="0 0 {width} {height}" font-family="{FONT_STACK}">',
+        f'<rect x="0" y="0" width="{width}" height="{height}" rx="10" '
+        f'fill="{CARD_BG}" stroke="{CARD_STROKE}" stroke-width="1"/>',
+    ]
+
+    for i, (value, label) in enumerate(cols):
+        cx = col_w * i + col_w / 2
+        cy = height / 2 + 8
+        delay = round(i * 0.15, 2)
+
+        if i > 0:
+            parts.append(
+                f'<line x1="{col_w*i}" y1="24" x2="{col_w*i}" y2="{height-24}" '
+                f'stroke="{CARD_STROKE}" stroke-width="1"/>'
+            )
+
+        parts.append(f'<g opacity="0" transform="translate({cx},{cy})">')
+        parts.append(
+            f'<animate attributeName="opacity" from="0" to="1" begin="{delay}s" '
+            f'dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>'
+        )
+        parts.append(
+            f'<animateTransform attributeName="transform" type="translate" '
+            f'from="{cx} {cy+12}" to="{cx} {cy}" begin="{delay}s" dur="0.5s" fill="freeze" '
+            f'calcMode="spline" keySplines="0.25 0.1 0.25 1"/>'
+        )
+        parts.append(
+            f'<text x="0" y="0" font-size="34" font-weight="700" '
+            f'fill="{ACCENT}" text-anchor="middle">{esc(value)}</text>'
+        )
+        parts.append(
+            f'<text x="0" y="24" font-size="11" fill="{DESC_COLOR}" '
+            f'text-anchor="middle" letter-spacing="0.5">{esc(label)}</text>'
+        )
+        parts.append("</g>")
+
+    parts.append("</svg>")
+    return "\n".join(parts)
+
+
 def pinned_meta(node):
     bits = []
     if node.get("primaryLanguage"):
@@ -235,11 +367,11 @@ def replace_section(content, start, end, new_block):
 
 def main():
     os.makedirs(ASSETS_DIR, exist_ok=True)
-    user_data = fetch_data()
+    main_data = graphql(MAIN_QUERY, {"login": USERNAME})["user"]
 
-    pinned_nodes = user_data["pinnedItems"]["nodes"]
+    pinned_nodes = main_data["pinnedItems"]["nodes"]
     recent_nodes = [
-        n for n in user_data["repositories"]["nodes"]
+        n for n in main_data["repositories"]["nodes"]
         if n["name"].lower() != USERNAME.lower()
     ][:5]
 
@@ -257,20 +389,33 @@ def main():
     with open(f"{ASSETS_DIR}/recent.svg", "w", encoding="utf-8") as f:
         f.write(render_board(recent_items))
 
+    day_counts = fetch_all_contribution_days(main_data["createdAt"])
+    current_streak, longest_streak, total_contributions = compute_streaks(day_counts)
+    with open(f"{ASSETS_DIR}/streak.svg", "w", encoding="utf-8") as f:
+        f.write(render_stat_strip(current_streak, longest_streak, total_contributions))
+
     with open(README_PATH, "r", encoding="utf-8") as f:
         content = f.read()
 
-    pinned_block = f'{PINNED_START}\n<img src="assets/pinned.svg" width="100%" alt="Pinned projects" />\n{PINNED_END}'
-    recent_block = f'{RECENT_START}\n<img src="assets/recent.svg" width="100%" alt="Recently active repos" />\n{RECENT_END}'
-
-    content = replace_section(content, PINNED_START, PINNED_END, pinned_block)
-    content = replace_section(content, RECENT_START, RECENT_END, recent_block)
+    content = replace_section(
+        content, PINNED_START, PINNED_END,
+        f'{PINNED_START}\n<img src="assets/pinned.svg" width="100%" alt="Pinned projects" />\n{PINNED_END}',
+    )
+    content = replace_section(
+        content, RECENT_START, RECENT_END,
+        f'{RECENT_START}\n<img src="assets/recent.svg" width="100%" alt="Recently active repos" />\n{RECENT_END}',
+    )
+    content = replace_section(
+        content, STREAK_START, STREAK_END,
+        f'{STREAK_START}\n<img src="assets/streak.svg" width="100%" alt="Contribution streak" />\n{STREAK_END}',
+    )
 
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(content)
 
     print(f"Pinned: {[n['name'] for n in pinned_nodes]}")
     print(f"Recent: {[n['name'] for n in recent_nodes]}")
+    print(f"Streak: current={current_streak} longest={longest_streak} total={total_contributions}")
 
 
 if __name__ == "__main__":
