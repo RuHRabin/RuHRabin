@@ -15,13 +15,18 @@ I like taking things apart to see how they actually work. Most days that means a
 ### Pinned
 
 <!--START_SECTION:pinned-->
-- **[Remove-Metadata-from-image-and-videos-on-Linux-](https://github.com/RuHRabin/Remove-Metadata-from-image-and-videos-on-Linux-)** — A free, fully offline toolkit of commands for stripping metadata from images and videos on Linux.
+- **[xkb-avro](https://github.com/RuHRabin/xkb-avro)** — Native XKB keyboard layout for Bengali Avro Phonetic on Linux — no IBus, no Fcitx, no daemon required.
+- **[Remove-Metadata-from-image-and-videos-on-Linux-](https://github.com/RuHRabin/Remove-Metadata-from-image-and-videos-on-Linux-)** — This is a list of commands for using metadata remover tools for linux. The tools are free and opensource and fully work on offline.  
 <!--END_SECTION:pinned-->
 
 ### Recently active
 
 <!--START_SECTION:recent-->
-_Synced automatically — populates after the next workflow run._
+- **[roast-app](https://github.com/RuHRabin/roast-app)** — This is a roast app made using laravel framework., updated yesterday
+- **[Remove-Metadata-from-image-and-videos-on-Linux-](https://github.com/RuHRabin/Remove-Metadata-from-image-and-videos-on-Linux-)** — This is a list of commands for using metadata remover tools for linux. The tools are free and opensource and fully work on offline.  , updated 2 months ago
+- **[xkb-avro](https://github.com/RuHRabin/xkb-avro)** — Native XKB keyboard layout for Bengali Avro Phonetic on Linux — no IBus, no Fcitx, no daemon required., updated 2 months ago
+- **[Android-Weather-App](https://github.com/RuHRabin/Android-Weather-App)** — It's an Android app built with Google AI Studio and is completely free. It also has radar images., updated 3 months ago
+- **[Python-Simple-Codes](https://github.com/RuHRabin/Python-Simple-Codes)** — This is a collection of simple python codes, updated 3 months ago
 <!--END_SECTION:recent-->
 
 ### By the numbers
