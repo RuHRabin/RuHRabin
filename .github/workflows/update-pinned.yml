@@ -25,6 +25,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
+          git add README.md assets/pinned.svg assets/recent.svg
           git diff --cached --quiet || git commit -m "chore: sync pinned + recent repos"
           git push
