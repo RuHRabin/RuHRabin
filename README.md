@@ -26,6 +26,10 @@ I like taking things apart to see how they actually work. Most days that means a
 
 ### By the numbers
 
+<!--START_SECTION:streak-->
+<img src="assets/streak.svg" width="100%" alt="Contribution streak" />
+<!--END_SECTION:streak-->
+
 <div align="center">
 
 <img height="165" src="https://github-stats-extended.vercel.app/api?username=RuHRabin&show_icons=true&theme=dark&hide_border=true&bg_color=1e2327&title_color=E3B341&icon_color=E3B341&text_color=ffffff&count_private=true" />
