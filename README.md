@@ -32,9 +32,6 @@ I like taking things apart to see how they actually work. Most days that means a
 
 ### By the numbers
 
-<!--START_SECTION:streak-->
-<img src="assets/streak.svg" width="100%" alt="Contribution streak" />
-<!--END_SECTION:streak-->
 
 <div align="center">
 
