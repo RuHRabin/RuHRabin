@@ -369,13 +369,6 @@ def recent_meta(node):
     return "  ·  ".join(bits)
 
 
-def replace_section(content, start, end, new_block):
-    pattern = re.compile(re.escape(start) + r".*?" + re.escape(end), re.S)
-    if not pattern.search(content):
-        sys.exit(f"Could not find {start} ... {end} markers in {README_PATH}.")
-    return pattern.sub(new_block, content)
-
-
 def main():
     os.makedirs(ASSETS_DIR, exist_ok=True)
     main_data = graphql(MAIN_QUERY, {"login": USERNAME})["user"]
