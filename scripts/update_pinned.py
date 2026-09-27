@@ -409,18 +409,12 @@ def main():
         content, RECENT_START, RECENT_END,
         f'{RECENT_START}\n<img src="assets/recent.svg" width="100%" alt="Recently active repos" />\n{RECENT_END}',
     )
-    content = replace_section(
-        content, STREAK_START, STREAK_END,
-        f'{STREAK_START}\n<img src="assets/streak.svg" width="100%" alt="Contribution streak" />\n{STREAK_END}',
-    )
 
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(content)
 
     print(f"Pinned: {[n['name'] for n in pinned_nodes]}")
     print(f"Recent: {[n['name'] for n in recent_nodes]}")
-    print(f"Streak: current={current_streak} longest={longest_streak} total={total_contributions}")
-
 
 if __name__ == "__main__":
     main()
