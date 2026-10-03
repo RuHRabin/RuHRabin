@@ -1,6 +1,6 @@
 # Rabin
 
-lifelong learner, currently deep in machine learning and simulation · Focusing
+lifelong learner, currently deep in machine learning and simulation
 
 I like taking things apart to see how they actually work. Most days that means a machine learning experiment or a simulation — the "let's see what happens" kind of programming, not the roadmap-driven kind. I'll pull something apart, break it, and figure out how to put it back together, usually better than it started.
 
