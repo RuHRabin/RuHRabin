@@ -1,0 +1,30 @@
+name: Sync pinned + recent repos
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Sync pinned + recently active repos into README.md
+        env:
+          GH_TOKEN: ${{ secrets.PINNED_REPOS_PAT }}
+          GH_USERNAME: RuHRabin
+        run: python3 scripts/update_pinned.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/pinned.svg assets/recent.svg
+          git diff --cached --quiet || git commit -m "chore: sync pinned + recent repos"
+          git push
