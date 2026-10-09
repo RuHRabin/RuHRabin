@@ -23,10 +23,17 @@ usually better than it started.
 <!--START_SECTION:repos-->
 ```
 rabin@kernel:~$ ls -l ~/pinned
-(syncing on first workflow run)
+earthpulse  JavaScript  3 stars
+xkb-avro    Shell       1 stars
+  Native XKB keyboard layout for Bengali Avro Phonetic on Linux — no
+  IBus, no Fcitx, no daemon required.
 
 rabin@kernel:~$ ls -lt ~/recent
-(syncing on first workflow run)
+ruhrabin.github.io   HTML        today
+earthpulse           JavaScript  today
+Python-Simple-Codes  Python      17 days ago
+Pixel-Perfect-Web    JavaScript  18 days ago
+html-bangla          Kotlin      18 days ago
 ```
 <!--END_SECTION:repos-->
 
