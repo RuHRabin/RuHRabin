@@ -1,11 +1,14 @@
 <div align="center">
-  <img src="assets/hacker.svg" width="100%" alt="root@rabin — user: Rabin, status: Focusing, focus: machine learning and simulation. Bio: I like taking things apart to see how they actually work. Most days that means a machine learning experiment or a simulation, not the roadmap-driven kind of programming. Tools: python, linux, bash, git, github, tensorflow, pytorch, scikit-learn, anaconda. site: rabin.pro.bd, mail: contact@rabin.pro.bd, x: @RuHRabin." />
+  <img src="assets/hacker.svg" width="100%" alt="root@rabin — user: Rabin, status: Focusing, focus: machine learning and simulation. Bio: I like taking things apart to see how they actually work. Most days that means a machine learning experiment or a simulation, not the roadmap-driven kind of programming. Tools: python, linux, bash, git, github, tensorflow, pytorch, scikit-learn, anaconda. x: @RuHRabin." />
 </div>
 
 <div align="center">
 
 [![Sync status](https://github.com/RuHRabin/RuHRabin/actions/workflows/update-pinned.yml/badge.svg)](https://github.com/RuHRabin/RuHRabin/actions/workflows/update-pinned.yml)
-[rabin.pro.bd](https://rabin.pro.bd) · [contact@rabin.pro.bd](mailto:contact@rabin.pro.bd) · [@RuHRabin](https://x.com/RuHRabin)
+
+`x` [@RuHRabin](https://x.com/RuHRabin)
+
+`root@rabin:~$ xdg-open` [the interactive terminal](https://claude.ai/artifact/VEFUzgxqYy9Wt9rpbWEBrj)
 
 </div>
 
