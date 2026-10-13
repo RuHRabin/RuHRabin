@@ -1,8 +1,7 @@
 <!-- ═══════════════════════════════════════════════════════════════
      RuHRabin · profile README
-     Auto-updating pieces (assets/pinned.svg, assets/recent.svg, the
-     sync badge) are kept from the original repo and still work with
-     .github/workflows/update-pinned.yml
+     Self-contained: no local assets or workflows needed.
+     Everything loads from public badge / card services.
      ═══════════════════════════════════════════════════════════════ -->
 
 <div align="center">
@@ -22,9 +21,9 @@
 
 <br/><br/>
 
-<a href="https://github.com/RuHRabin/RuHRabin/actions/workflows/update-pinned.yml"><img src="https://github.com/RuHRabin/RuHRabin/actions/workflows/update-pinned.yml/badge.svg" alt="Sync status"/></a>
-&nbsp;
-<img src="assets/status.svg" alt="Status: Focusing" />
+<img src="https://img.shields.io/badge/STATUS-FOCUSING%20%F0%9F%8E%AF-22D3EE?style=flat-square&labelColor=1e2327" alt="Status: Focusing" />
+<img src="https://img.shields.io/badge/CURRENTLY-ML%20%26%20SIMULATION-0e7490?style=flat-square&labelColor=1e2327" alt="Currently: ML and simulation" />
+<img src="https://img.shields.io/badge/ASK%20ME-SCIENCE%20%26%20TECH-0e7490?style=flat-square&labelColor=1e2327" alt="Ask me: science and tech" />
 
 </div>
 
@@ -83,7 +82,9 @@ flowchart LR
 
 <div align="center">
 
-<img src="assets/pinned.svg" alt="Pinned projects" />
+<a href="https://github.com/RuHRabin/Remove-Metadata-from-image-and-videos-on-Linux-">
+  <img src="https://github-stats-extended.vercel.app/api/pin/?username=RuHRabin&repo=Remove-Metadata-from-image-and-videos-on-Linux-&theme=dark&hide_border=true&bg_color=1e2327&title_color=22D3EE&icon_color=22D3EE&text_color=ffffff" alt="Pinned project: Remove-Metadata-from-image-and-videos-on-Linux-" />
+</a>
 
 </div>
 
@@ -91,16 +92,6 @@ flowchart LR
 
 > **[Remove-Metadata-from-image-and-videos-on-Linux-](https://github.com/RuHRabin/Remove-Metadata-from-image-and-videos-on-Linux-)**
 > A ready-to-run list of commands for stripping metadata from images and videos on Linux. Every tool is free, open source and works fully offline, so your files never leave your machine.
-
-<br/>
-
-## 🛰️ Recently active
-
-<div align="center">
-
-<img src="assets/recent.svg" alt="Recently active repos" />
-
-</div>
 
 <br/>
 
@@ -161,10 +152,6 @@ Got a question about science or tech, an experiment worth breaking, or a project
 <div align="center">
 
 **[rabin.pro.bd](https://rabin.pro.bd)** &nbsp;·&nbsp; **[contact@rabin.pro.bd](mailto:contact@rabin.pro.bd)** &nbsp;·&nbsp; **[@RuHRabin](https://x.com/RuHRabin)**
-
-<br/>
-
-<img src="assets/bird.svg" alt="" width="96" />
 
 <br/>
 
