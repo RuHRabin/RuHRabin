@@ -27,13 +27,16 @@ earthpulse  JavaScript  3 stars
 xkb-avro    Shell       1 stars
   Native XKB keyboard layout for Bengali Avro Phonetic on Linux — no
   IBus, no Fcitx, no daemon required.
+Gargantua   TypeScript  0 stars
+  A browser game inspired by Interstellar. Fly a small ship around a
+  black hole, collect data, and get back to the Endurance before Eart...
 
 rabin@kernel:~$ ls -lt ~/recent
-Sol-Mesh             Kotlin      today
-ruhrabin.github.io   HTML        today
-earthpulse           JavaScript  today
-Pixel-Perfect-Web    JavaScript  3 days ago
-Python-Simple-Codes  Python      21 days ago
+ruhrabin.github.io  HTML        today
+earthpulse          JavaScript  today
+Gargantua           TypeScript  today
+Sol-Mesh            Kotlin      today
+Pixel-Perfect-Web   JavaScript  4 days ago
 ```
 <!--END_SECTION:repos-->
 
