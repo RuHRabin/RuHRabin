@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="1000" height="260" role="img" aria-labelledby="t d">
+  <title id="t">A small neural network with signals flowing through it</title>
+  <desc id="d">Animated pulses travel from questions through experiments and mistakes until understanding lights up.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f1f"/>
+      <stop offset="1" stop-color="#151c37"/>
+    </linearGradient>
+    <filter id="glow" x="-300%" y="-300%" width="700%" height="700%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1000" height="260" rx="18" fill="url(#bg)"/>
+  <line x1="150" y1="72.0" x2="390" y2="32.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="150" y1="72.0" x2="390" y2="72.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="150" y1="72.0" x2="390" y2="112.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="150" y1="72.0" x2="390" y2="152.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="150" y1="72.0" x2="390" y2="192.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="150" y1="112.0" x2="390" y2="32.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="150" y1="112.0" x2="390" y2="72.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="150" y1="112.0" x2="390" y2="112.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="150" y1="112.0" x2="390" y2="152.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="150" y1="112.0" x2="390" y2="192.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="150" y1="152.0" x2="390" y2="32.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="150" y1="152.0" x2="390" y2="72.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="150" y1="152.0" x2="390" y2="112.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="150" y1="152.0" x2="390" y2="152.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="150" y1="152.0" x2="390" y2="192.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="32.0" x2="610" y2="32.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="32.0" x2="610" y2="72.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="32.0" x2="610" y2="112.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="32.0" x2="610" y2="152.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="32.0" x2="610" y2="192.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="72.0" x2="610" y2="32.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="72.0" x2="610" y2="72.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="72.0" x2="610" y2="112.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="72.0" x2="610" y2="152.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="72.0" x2="610" y2="192.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="112.0" x2="610" y2="32.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="112.0" x2="610" y2="72.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="112.0" x2="610" y2="112.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="112.0" x2="610" y2="152.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="112.0" x2="610" y2="192.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="152.0" x2="610" y2="32.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="152.0" x2="610" y2="72.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="152.0" x2="610" y2="112.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="152.0" x2="610" y2="152.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="152.0" x2="610" y2="192.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="192.0" x2="610" y2="32.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="192.0" x2="610" y2="72.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="192.0" x2="610" y2="112.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="192.0" x2="610" y2="152.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="390" y1="192.0" x2="610" y2="192.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="610" y1="32.0" x2="850" y2="92.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="610" y1="32.0" x2="850" y2="132.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="610" y1="72.0" x2="850" y2="92.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="610" y1="72.0" x2="850" y2="132.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="610" y1="112.0" x2="850" y2="92.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="610" y1="112.0" x2="850" y2="132.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="610" y1="152.0" x2="850" y2="92.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="610" y1="152.0" x2="850" y2="132.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="610" y1="192.0" x2="850" y2="92.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <line x1="610" y1="192.0" x2="850" y2="132.0" stroke="#8b9bff" stroke-opacity="0.11"/>
+  <circle cx="150" cy="72.0" r="8" fill="#0f1630" stroke="#8b6bff" stroke-width="2"/>
+  <circle cx="150" cy="112.0" r="8" fill="#0f1630" stroke="#8b6bff" stroke-width="2"/>
+  <circle cx="150" cy="152.0" r="8" fill="#0f1630" stroke="#8b6bff" stroke-width="2"/>
+  <circle cx="390" cy="32.0" r="8" fill="#0f1630" stroke="#4fb3ff" stroke-width="2"/>
+  <circle cx="390" cy="72.0" r="8" fill="#0f1630" stroke="#4fb3ff" stroke-width="2"/>
+  <circle cx="390" cy="112.0" r="8" fill="#0f1630" stroke="#4fb3ff" stroke-width="2"/>
+  <circle cx="390" cy="152.0" r="8" fill="#0f1630" stroke="#4fb3ff" stroke-width="2"/>
+  <circle cx="390" cy="192.0" r="8" fill="#0f1630" stroke="#4fb3ff" stroke-width="2"/>
+  <circle cx="610" cy="32.0" r="8" fill="#0f1630" stroke="#4fb3ff" stroke-width="2"/>
+  <circle cx="610" cy="72.0" r="8" fill="#0f1630" stroke="#4fb3ff" stroke-width="2"/>
+  <circle cx="610" cy="112.0" r="8" fill="#0f1630" stroke="#4fb3ff" stroke-width="2"/>
+  <circle cx="610" cy="152.0" r="8" fill="#0f1630" stroke="#4fb3ff" stroke-width="2"/>
+  <circle cx="610" cy="192.0" r="8" fill="#0f1630" stroke="#4fb3ff" stroke-width="2"/>
+  <circle cx="850" cy="92.0" r="8" fill="#0f1630" stroke="#00e5c3" stroke-width="2"/>
+  <circle cx="850" cy="132.0" r="8" fill="#0f1630" stroke="#00e5c3" stroke-width="2"/>
+  <circle cx="850" cy="92.0" r="8" fill="#00e5c3" opacity="0">
+    <animate attributeName="opacity" dur="4.5s" repeatCount="indefinite" values="0;0.9;0.25;0;0" keyTimes="0;0.66;0.8;0.9;1"/>
+  </circle>
+  <circle cx="850" cy="92.0" r="8" fill="none" stroke="#00e5c3" stroke-width="2" opacity="0">
+    <animate attributeName="r" dur="4.5s" repeatCount="indefinite" values="8;8;24;24" keyTimes="0;0.66;0.9;1"/>
+    <animate attributeName="opacity" dur="4.5s" repeatCount="indefinite" values="0;0.9;0;0" keyTimes="0;0.66;0.9;1"/>
+  </circle>
+  <circle cx="850" cy="132.0" r="8" fill="#00e5c3" opacity="0">
+    <animate attributeName="opacity" dur="4.5s" repeatCount="indefinite" values="0;0.9;0.25;0;0" keyTimes="0;0.66;0.8;0.9;1"/>
+  </circle>
+  <circle cx="850" cy="132.0" r="8" fill="none" stroke="#00e5c3" stroke-width="2" opacity="0">
+    <animate attributeName="r" dur="4.5s" repeatCount="indefinite" values="8;8;24;24" keyTimes="0;0.66;0.9;1"/>
+    <animate attributeName="opacity" dur="4.5s" repeatCount="indefinite" values="0;0.9;0;0" keyTimes="0;0.66;0.9;1"/>
+  </circle>
+  <circle r="3.4" fill="#4fb3ff" opacity="0" filter="url(#glow)">
+    <animateMotion dur="4.5s" begin="0.18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.2;1" path="M150,112.0 L390,112.0"/>
+    <animate attributeName="opacity" dur="4.5s" begin="0.18s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.02;0.18;0.2;1"/>
+  </circle>
+  <circle r="3.4" fill="#4fb3ff" opacity="0" filter="url(#glow)">
+    <animateMotion dur="4.5s" begin="0.21s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.2;1" path="M150,152.0 L390,152.0"/>
+    <animate attributeName="opacity" dur="4.5s" begin="0.21s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.02;0.18;0.2;1"/>
+  </circle>
+  <circle r="3.4" fill="#4fb3ff" opacity="0" filter="url(#glow)">
+    <animateMotion dur="4.5s" begin="0.06s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.2;1" path="M150,112.0 L390,152.0"/>
+    <animate attributeName="opacity" dur="4.5s" begin="0.06s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.02;0.18;0.2;1"/>
+  </circle>
+  <circle r="3.4" fill="#4fb3ff" opacity="0" filter="url(#glow)">
+    <animateMotion dur="4.5s" begin="0.18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.2;1" path="M150,152.0 L390,192.0"/>
+    <animate attributeName="opacity" dur="4.5s" begin="0.18s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.02;0.18;0.2;1"/>
+  </circle>
+  <circle r="3.4" fill="#4fb3ff" opacity="0" filter="url(#glow)">
+    <animateMotion dur="4.5s" begin="0.22s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.2;1" path="M150,152.0 L390,72.0"/>
+    <animate attributeName="opacity" dur="4.5s" begin="0.22s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.02;0.18;0.2;1"/>
+  </circle>
+  <circle r="3.4" fill="#4fb3ff" opacity="0" filter="url(#glow)">
+    <animateMotion dur="4.5s" begin="1.03s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.2;1" path="M390,72.0 L610,32.0"/>
+    <animate attributeName="opacity" dur="4.5s" begin="1.03s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.02;0.18;0.2;1"/>
+  </circle>
+  <circle r="3.4" fill="#4fb3ff" opacity="0" filter="url(#glow)">
+    <animateMotion dur="4.5s" begin="1.28s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.2;1" path="M390,32.0 L610,152.0"/>
+    <animate attributeName="opacity" dur="4.5s" begin="1.28s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.02;0.18;0.2;1"/>
+  </circle>
+  <circle r="3.4" fill="#4fb3ff" opacity="0" filter="url(#glow)">
+    <animateMotion dur="4.5s" begin="1.24s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.2;1" path="M390,112.0 L610,192.0"/>
+    <animate attributeName="opacity" dur="4.5s" begin="1.24s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.02;0.18;0.2;1"/>
+  </circle>
+  <circle r="3.4" fill="#4fb3ff" opacity="0" filter="url(#glow)">
+    <animateMotion dur="4.5s" begin="1.01s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.2;1" path="M390,72.0 L610,192.0"/>
+    <animate attributeName="opacity" dur="4.5s" begin="1.01s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.02;0.18;0.2;1"/>
+  </circle>
+  <circle r="3.4" fill="#4fb3ff" opacity="0" filter="url(#glow)">
+    <animateMotion dur="4.5s" begin="1.34s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.2;1" path="M390,32.0 L610,192.0"/>
+    <animate attributeName="opacity" dur="4.5s" begin="1.34s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.02;0.18;0.2;1"/>
+  </circle>
+  <circle r="3.4" fill="#00e5c3" opacity="0" filter="url(#glow)">
+    <animateMotion dur="4.5s" begin="2.02s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.2;1" path="M610,152.0 L850,132.0"/>
+    <animate attributeName="opacity" dur="4.5s" begin="2.02s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.02;0.18;0.2;1"/>
+  </circle>
+  <circle r="3.4" fill="#00e5c3" opacity="0" filter="url(#glow)">
+    <animateMotion dur="4.5s" begin="2.01s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.2;1" path="M610,72.0 L850,92.0"/>
+    <animate attributeName="opacity" dur="4.5s" begin="2.01s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.02;0.18;0.2;1"/>
+  </circle>
+  <circle r="3.4" fill="#00e5c3" opacity="0" filter="url(#glow)">
+    <animateMotion dur="4.5s" begin="2.31s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.2;1" path="M610,32.0 L850,92.0"/>
+    <animate attributeName="opacity" dur="4.5s" begin="2.31s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.02;0.18;0.2;1"/>
+  </circle>
+  <circle r="3.4" fill="#00e5c3" opacity="0" filter="url(#glow)">
+    <animateMotion dur="4.5s" begin="2.21s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.2;1" path="M610,152.0 L850,92.0"/>
+    <animate attributeName="opacity" dur="4.5s" begin="2.21s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.02;0.18;0.2;1"/>
+  </circle>
+  <circle r="3.4" fill="#00e5c3" opacity="0" filter="url(#glow)">
+    <animateMotion dur="4.5s" begin="2.27s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.2;1" path="M610,112.0 L850,92.0"/>
+    <animate attributeName="opacity" dur="4.5s" begin="2.27s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.02;0.18;0.2;1"/>
+  </circle>
+  <text x="150" y="238" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#8b6bff">questions</text>
+  <text x="390" y="238" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#4fb3ff">experiments</text>
+  <text x="610" y="238" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#4fb3ff">mistakes</text>
+  <text x="850" y="238" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#00e5c3">understanding</text>
+</svg>

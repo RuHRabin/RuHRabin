@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450" width="1000" height="450" role="img" aria-labelledby="t d">
+  <title id="t">Rabin: a ball rolling across a loss landscape</title>
+  <desc id="d">An animated ball rolls down a loss curve, lingers in two local minima, carries momentum over the hills, and settles in the global minimum.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f1f"/>
+      <stop offset="1" stop-color="#151c37"/>
+    </linearGradient>
+    <linearGradient id="curve" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b6bff"/>
+      <stop offset="0.55" stop-color="#4fb3ff"/>
+      <stop offset="1" stop-color="#00e5c3"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4fb3ff" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#4fb3ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.045"/>
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="450" rx="18" fill="url(#bg)"/>
+  <rect width="1000" height="450" rx="18" fill="url(#grid)"/>
+
+  <text x="44" y="98" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="68" font-weight="700" fill="#e8ecff" letter-spacing="-1">Rabin</text>
+  <text x="46" y="136" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="18" fill="#4fb3ff">lifelong learner · machine learning &amp; simulation</text>
+  <text x="956" y="52" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#8a94c0">optimizer = curiosity</text>
+  <text x="956" y="72" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#8a94c0">momentum = never stopping</text>
+
+  <path d="M40,180 C120,180 170,310 260,310 C330,310 330,260 400,260 C470,260 450,345 520,345 C590,345 580,300 650,300 C720,300 750,400 820,400 C890,400 900,365 960,365 L960,450 L40,450 Z" fill="url(#fill)"/>
+  <path d="M40,180 C120,180 170,310 260,310 C330,310 330,260 400,260 C470,260 450,345 520,345 C590,345 580,300 650,300 C720,300 750,400 820,400 C890,400 900,365 960,365" fill="none" stroke="url(#curve)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="260" cy="310" r="4.5" fill="none" stroke="#8a94c0" stroke-width="1.5"/>
+  <circle cx="520" cy="345" r="4.5" fill="none" stroke="#8a94c0" stroke-width="1.5"/>
+  <circle cx="820" cy="400" r="5" fill="#00e5c3"/>
+  <text x="260" y="338" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#8a94c0">local minimum</text>
+  <text x="520" y="373" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#8a94c0">local minimum</text>
+  <text x="820" y="430" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="14" font-weight="700" fill="#00e5c3">global minimum</text>
+  <text x="44" y="430" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#8a94c0">iterations →</text>
+
+  <circle cx="820" cy="400" r="0" fill="none" stroke="#00e5c3" stroke-width="2" opacity="0">
+    <animate attributeName="r" dur="11s" repeatCount="indefinite" values="0;0;40;40" keyTimes="0;0.78;0.92;1"/>
+    <animate attributeName="opacity" dur="11s" repeatCount="indefinite" values="0;0.9;0;0" keyTimes="0;0.78;0.92;1"/>
+  </circle>
+
+  <circle r="3" fill="#ffb454" opacity="0">
+    <animateMotion dur="11s" begin="0.36s" repeatCount="indefinite" calcMode="spline" keyPoints="0;0.2475;0.2535;0.5381;0.5441;0.8624;0.8624" keyTimes="0;0.2;0.3;0.5;0.6;0.8;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" path="M40,180 C120,180 170,310 260,310 C330,310 330,260 400,260 C470,260 450,345 520,345 C590,345 580,300 650,300 C720,300 750,400 820,400 C890,400 900,365 960,365"/>
+    <animate attributeName="opacity" dur="11s" begin="0.36s" repeatCount="indefinite" values="0;0.2;0.2;0" keyTimes="0;0.03;0.93;1"/>
+  </circle>
+  <circle r="5" fill="#ffb454" opacity="0">
+    <animateMotion dur="11s" begin="0.24s" repeatCount="indefinite" calcMode="spline" keyPoints="0;0.2475;0.2535;0.5381;0.5441;0.8624;0.8624" keyTimes="0;0.2;0.3;0.5;0.6;0.8;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" path="M40,180 C120,180 170,310 260,310 C330,310 330,260 400,260 C470,260 450,345 520,345 C590,345 580,300 650,300 C720,300 750,400 820,400 C890,400 900,365 960,365"/>
+    <animate attributeName="opacity" dur="11s" begin="0.24s" repeatCount="indefinite" values="0;0.35;0.35;0" keyTimes="0;0.03;0.93;1"/>
+  </circle>
+  <circle r="7" fill="#ffb454" opacity="0">
+    <animateMotion dur="11s" begin="0.12s" repeatCount="indefinite" calcMode="spline" keyPoints="0;0.2475;0.2535;0.5381;0.5441;0.8624;0.8624" keyTimes="0;0.2;0.3;0.5;0.6;0.8;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" path="M40,180 C120,180 170,310 260,310 C330,310 330,260 400,260 C470,260 450,345 520,345 C590,345 580,300 650,300 C720,300 750,400 820,400 C890,400 900,365 960,365"/>
+    <animate attributeName="opacity" dur="11s" begin="0.12s" repeatCount="indefinite" values="0;0.55;0.55;0" keyTimes="0;0.03;0.93;1"/>
+  </circle>
+  <circle r="9" fill="#ffb454" opacity="0" filter="url(#glow)">
+    <animateMotion dur="11s" begin="0s" repeatCount="indefinite" calcMode="spline" keyPoints="0;0.2475;0.2535;0.5381;0.5441;0.8624;0.8624" keyTimes="0;0.2;0.3;0.5;0.6;0.8;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" path="M40,180 C120,180 170,310 260,310 C330,310 330,260 400,260 C470,260 450,345 520,345 C590,345 580,300 650,300 C720,300 750,400 820,400 C890,400 900,365 960,365"/>
+    <animate attributeName="opacity" dur="11s" begin="0s" repeatCount="indefinite" values="0;1;1;0" keyTimes="0;0.03;0.93;1"/>
+  </circle>
+</svg>
