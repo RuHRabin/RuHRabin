@@ -71,8 +71,8 @@ Rules in, surprising behaviour out. Simulation is where I go to ask *"what if?"*
 ## `05` · Recent runs
 
 <!--RECENT:START-->
-- `2026-10-14` &nbsp;[ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io) · `HTML`
 - `2026-10-14` &nbsp;[earthpulse](https://github.com/RuHRabin/earthpulse) · `JavaScript`
+- `2026-10-14` &nbsp;[ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io) · `HTML`
 - `2026-10-14` &nbsp;[3D-Website-Boilerplate-Designer-Doc](https://github.com/RuHRabin/3D-Website-Boilerplate-Designer-Doc)
 - `2026-10-13` &nbsp;[Schemify](https://github.com/RuHRabin/Schemify) · `Python`
 - `2026-10-12` &nbsp;[Gargantua](https://github.com/RuHRabin/Gargantua) · `TypeScript`
