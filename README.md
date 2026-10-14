@@ -50,18 +50,26 @@ Rules in, surprising behaviour out. Simulation is where I go to ask *"what if?"*
 
 <br>
 
-## `04` · Model card
+## `04` · Model registry
 
-| | |
-| :-- | :-- |
-| **Project** | [`Remove-Metadata-from-image-and-videos-on-Linux-`](https://github.com/RuHRabin/Remove-Metadata-from-image-and-videos-on-Linux-) |
-| **Task** | Strip metadata from images and videos on Linux |
-| **What's inside** | A list of commands for metadata remover tools |
-| **Constraints** | Free, open source, and fully offline |
+<sub>Pulled straight from GitHub by a small script. Publish or update a repo and this table follows on its own.</sub>
+
+<!--STATS:START-->
+<!--STATS:END-->
+
+<!--PINNED:START-->
+<!--PINNED:END-->
 
 <br>
 
-## `05` · Environment
+## `05` · Recent runs
+
+<!--RECENT:START-->
+<!--RECENT:END-->
+
+<br>
+
+## `06` · Environment
 
 ```text
 # requirements.txt
@@ -78,7 +86,7 @@ anaconda
 
 <br>
 
-## `06` · Inference
+## `07` · Inference
 
 Ask me about **science** and **tech**.
 
