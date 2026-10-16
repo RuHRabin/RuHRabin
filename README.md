@@ -71,8 +71,8 @@ Rules in, surprising behaviour out. Simulation is where I go to ask *"what if?"*
 ## `05` · Recent runs
 
 <!--RECENT:START-->
-- `2026-10-16` &nbsp;[earthpulse](https://github.com/RuHRabin/earthpulse) · `JavaScript`
 - `2026-10-16` &nbsp;[ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io) · `HTML`
+- `2026-10-16` &nbsp;[earthpulse](https://github.com/RuHRabin/earthpulse) · `JavaScript`
 - `2026-10-16` &nbsp;[Sol-Mesh](https://github.com/RuHRabin/Sol-Mesh) · `Kotlin`
 - `2026-10-15` &nbsp;[3D-Website-Boilerplate-Designer-Doc](https://github.com/RuHRabin/3D-Website-Boilerplate-Designer-Doc) · `HTML`
 - `2026-10-13` &nbsp;[Schemify](https://github.com/RuHRabin/Schemify) · `Python`
