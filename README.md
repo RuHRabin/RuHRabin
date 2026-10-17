@@ -61,7 +61,7 @@ Rules in, surprising behaviour out. Simulation is where I go to ask *"what if?"*
 <!--PINNED:START-->
 | project | what it does | language | ★ | last updated |
 | :-- | :-- | :-- | --: | :-- |
-| [**earthpulse**](https://github.com/RuHRabin/earthpulse) | <sub>no description yet</sub> | `JavaScript` | 3 | 2026-10-16 |
+| [**earthpulse**](https://github.com/RuHRabin/earthpulse) | <sub>no description yet</sub> | `JavaScript` | 3 | 2026-10-17 |
 | [**xkb-avro**](https://github.com/RuHRabin/xkb-avro) | Native XKB keyboard layout for Bengali Avro Phonetic on Linux — no IBus, no Fcitx, no daemon required. | `Shell` | 1 | 2026-06-15 |
 | [**Gargantua**](https://github.com/RuHRabin/Gargantua) | A browser game inspired by Interstellar. Fly a small ship around a black hole, collect data, and get back to… | `TypeScript` | 0 | 2026-10-12 |
 <!--PINNED:END-->
@@ -71,8 +71,8 @@ Rules in, surprising behaviour out. Simulation is where I go to ask *"what if?"*
 ## `05` · Recent runs
 
 <!--RECENT:START-->
-- `2026-10-16` &nbsp;[ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io) · `HTML`
-- `2026-10-16` &nbsp;[earthpulse](https://github.com/RuHRabin/earthpulse) · `JavaScript`
+- `2026-10-17` &nbsp;[ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io) · `HTML`
+- `2026-10-17` &nbsp;[earthpulse](https://github.com/RuHRabin/earthpulse) · `JavaScript`
 - `2026-10-16` &nbsp;[Sol-Mesh](https://github.com/RuHRabin/Sol-Mesh) · `Kotlin`
 - `2026-10-15` &nbsp;[3D-Website-Boilerplate-Designer-Doc](https://github.com/RuHRabin/3D-Website-Boilerplate-Designer-Doc) · `HTML`
 - `2026-10-13` &nbsp;[Schemify](https://github.com/RuHRabin/Schemify) · `Python`
