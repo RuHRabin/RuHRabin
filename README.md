@@ -98,9 +98,9 @@ Before I look, an idea is a superposition of every way it could be wrong. Experi
 ## `⟳` Recent events
 
 <!--RECENT:START-->
+- `t = 2026-10-18` &nbsp;⟶&nbsp; [earthpulse](https://github.com/RuHRabin/earthpulse) · `JavaScript`
 - `t = 2026-10-18` &nbsp;⟶&nbsp; [ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io) · `HTML`
 - `t = 2026-10-18` &nbsp;⟶&nbsp; [Sol-Mesh](https://github.com/RuHRabin/Sol-Mesh) · `Kotlin`
-- `t = 2026-10-18` &nbsp;⟶&nbsp; [earthpulse](https://github.com/RuHRabin/earthpulse) · `JavaScript`
 - `t = 2026-10-15` &nbsp;⟶&nbsp; [3D-Website-Boilerplate-Designer-Doc](https://github.com/RuHRabin/3D-Website-Boilerplate-Designer-Doc) · `HTML`
 - `t = 2026-10-13` &nbsp;⟶&nbsp; [Schemify](https://github.com/RuHRabin/Schemify) · `Python`
 <!--RECENT:END-->
