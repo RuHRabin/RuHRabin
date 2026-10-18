@@ -120,9 +120,9 @@ Before I look, an idea is a superposition of every way it could be wrong. Experi
 
 Ask me about **science** and **tech**.
 
-- ✉ &nbsp;[rabin@ruhrbin.site](mailto:rabin@ruhrbin.site)
-- 𝕏 &nbsp;[@RuHRabin](https://x.com/RuHRabin)
-- Facebook &nbsp;[RuHRabin](https://www.facebook.com/RuHRabin)
+- [✉rabin@ruhrbin.site](mailto:rabin@ruhrbin.site)
+- [𝕏](https://x.com/RuHRabin)
+- [](https://www.facebook.com/RuHRabin)
 
 <br>
 
