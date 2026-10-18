@@ -122,7 +122,7 @@ Ask me about **science** and **tech**.
 
 - ✉ &nbsp;[rabin@ruhrbin.site](mailto:rabin@ruhrbin.site)
 - 𝕏 &nbsp;[@RuHRabin](https://x.com/RuHRabin)
-- Facebook &nbsp;[M.RakibUlHasanRabin](https://www.facebook.com/M.RakibUlHasanRabin)
+- Facebook &nbsp;[RuHRabin](https://www.facebook.com/RuHRabin)
 
 <br>
 
