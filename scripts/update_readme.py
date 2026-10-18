@@ -6,6 +6,7 @@ Pure standard library, no dependencies. Run by .github/workflows/update-pinned.y
 
     <!--STATS:START--> ... <!--STATS:END-->
     <!--PINNED:START--> ... <!--PINNED:END-->
+    <!--POPULAR:START--> ... <!--POPULAR:END-->
     <!--RECENT:START--> ... <!--RECENT:END-->
 
 Output contains no timestamps, so the README only changes (and only gets a new
@@ -25,7 +26,8 @@ README = os.environ.get(
     os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "README.md"),
 )
 PINNED_LIMIT = 6
-RECENT_LIMIT = 5
+RECENT_LIMIT = 3
+POPULAR_LIMIT = 3
 API = "https://api.github.com"
 
 
@@ -58,6 +60,13 @@ def fetch_repos():
         if not r.get("fork") and not r.get("archived") and r["name"].lower() != USER.lower()
     ]
     keep.sort(key=lambda r: r.get("pushed_at") or "", reverse=True)
+    for r in keep:
+        # The list endpoint reports stars as "watchers_count". Real watchers are
+        # "subscribers_count", which only the single-repo endpoint returns.
+        try:
+            r["watchers"] = _request(f"{API}/repos/{r['full_name']}").get("subscribers_count", 0)
+        except urllib.error.URLError:
+            r["watchers"] = 0
     return keep
 
 
@@ -80,7 +89,7 @@ def fetch_pinned():
 
 
 # ───────────────────────────── rendering ─────────────────────────────
-def clean(text, limit=110):
+def clean(text, limit=80):
     text = re.sub(r"\s+", " ", (text or "").strip()).replace("|", "\\|")
     if not text:
         return "<sub>no description yet</sub>"
@@ -92,13 +101,13 @@ def day(iso):
 
 
 def render_stats(repos):
-    stars = sum(r.get("stargazers_count", 0) for r in repos)
+    total_stars = sum(stars(r) for r in repos)
     langs = sorted({r["language"] for r in repos if r.get("language")})
     lang_txt = ", ".join(langs) if langs else "–"
     return (
-        f"`N = {len(repos)}` systems &nbsp;·&nbsp; "
-        f"`Σ★ = {stars}` &nbsp;·&nbsp; "
-        f"`basis = {{{lang_txt}}}`"
+        f"**{len(repos)}** repos &nbsp;·&nbsp; "
+        f"**{total_stars}** ★ &nbsp;·&nbsp; "
+        f"{lang_txt}"
     )
 
 
@@ -108,8 +117,8 @@ def render_pinned(repos, pinned_names):
     if not chosen:  # no token / nothing pinned → fall back to most recently pushed
         chosen = repos[:PINNED_LIMIT]
     if not chosen:
-        return "_Vacuum state. The first public repo I publish will show up here automatically._"
-    rows = ["| system | what it does | basis | ★ | last perturbed |", "| :-- | :-- | :-- | --: | :-- |"]
+        return "_Nothing here yet. The first public repo I publish will show up automatically._"
+    rows = ["| project | what it does | language | ★ | updated |", "| :-- | :-- | :-- | --: | :-- |"]
     for r in chosen:
         rows.append(
             f"| [**{r['name']}**]({r['html_url']}) | {clean(r.get('description'))} "
@@ -121,12 +130,60 @@ def render_pinned(repos, pinned_names):
 
 def render_recent(repos):
     if not repos:
-        return "_No events recorded yet._"
+        return "_Nothing here yet._"
     lines = []
     for r in repos[:RECENT_LIMIT]:
         lang = f" · `{r['language']}`" if r.get("language") else ""
-        lines.append(f"- `t = {day(r.get('pushed_at'))}` &nbsp;⟶&nbsp; [{r['name']}]({r['html_url']}){lang}")
+        lines.append(f"- `{day(r.get('pushed_at'))}` &nbsp;[{r['name']}]({r['html_url']}){lang}")
     return "\n".join(lines)
+
+
+def stars(r):
+    return r.get("stargazers_count", 0)
+
+
+def forks(r):
+    return r.get("forks_count", 0)
+
+
+def watchers(r):
+    return r.get("watchers", 0)
+
+
+def popularity(r):
+    """One number for 'most popular': stars + forks + watchers."""
+    return stars(r) + forks(r) + watchers(r)
+
+
+def render_popular(repos):
+    """Top repos by stars, forks, watchers and overall popularity.
+
+    Ties break on stars, then on the most recent push, so the order is stable.
+    A repo with a zero count is shown as a dash, never ranked.
+    """
+    if not repos:
+        return "_Nothing here yet._"
+    cols = [
+        ("★ Most starred", stars),
+        ("⑂ Most forked", forks),
+        ("◉ Most watched", watchers),
+        ("✦ Most popular", popularity),
+    ]
+    ranked = []
+    for _, key in cols:
+        order = sorted(
+            repos,
+            key=lambda r: (key(r), stars(r), r.get("pushed_at") or ""),
+            reverse=True,
+        )
+        ranked.append([r for r in order if key(r) > 0][:POPULAR_LIMIT])
+    rows = ["| " + " | ".join(c[0] for c in cols) + " |", "| " + " | ".join([":--"] * len(cols)) + " |"]
+    for i in range(POPULAR_LIMIT):
+        cells = []
+        for (_, key), col in zip(cols, ranked):
+            cells.append(f"[**{col[i]['name']}**]({col[i]['html_url']}) · `{key(col[i])}`" if i < len(col) else "–")
+        rows.append("| " + " | ".join(cells) + " |")
+    return "\n".join(rows)
 
 
 def replace_block(text, name, body):
@@ -144,6 +201,7 @@ def main():
     text = original
     text = replace_block(text, "STATS", render_stats(repos))
     text = replace_block(text, "PINNED", render_pinned(repos, pinned))
+    text = replace_block(text, "POPULAR", render_popular(repos))
     text = replace_block(text, "RECENT", render_recent(repos))
     if text == original:
         print("README already up to date.")

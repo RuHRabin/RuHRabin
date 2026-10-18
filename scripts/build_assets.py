@@ -7,7 +7,6 @@ numerical integrator or a closed-form solution.
     hero.svg             Lorenz attractor, two trajectories 1e-3 apart (RK4)
     double-pendulum.svg  Lagrangian double pendulum, two copies 1e-3 rad apart (RK4)
     kepler-orbit.svg     Kepler's equation solved with Newton's method, equal areas swept
-    wavefunction.svg     |psi|^2 for a particle in a box, n=1 + n=2 superposition
     wave-divider.svg     two travelling sine waves, used as a section separator
 
 Run:  python3 scripts/build_assets.py
@@ -363,60 +362,6 @@ def build_kepler():
     write("kepler-orbit.svg", "\n".join(o))
 
 
-# ───────────────────────────── 4. Particle in a box ─────────────────────────────
-def build_wave():
-    w, h = 1200, 300
-    x0, x1, base, scale = 60.0, 1140.0, 250.0, 130.0
-    npts, nframes, dur = 100, 48, 8
-
-    def density(u, phi):
-        s1 = math.sin(math.pi * u)
-        s2 = math.sin(2 * math.pi * u)
-        return 0.5 * (s1 * s1 + s2 * s2 + 2 * s1 * s2 * math.cos(phi))
-
-    frames = []
-    for i in range(nframes + 1):
-        phi = 2 * math.pi * i / nframes
-        pts = []
-        for j in range(npts + 1):
-            u = j / npts
-            pts.append(f"{x0 + u * (x1 - x0):.1f},{base - density(u, phi) * scale:.1f}")
-        frames.append(f"M{x0:.0f},{base:.0f} L" + " L".join(pts) + f" L{x1:.0f},{base:.0f} Z")
-
-    avg = "M" + " L".join(
-        f"{x0 + (j / 160) * (x1 - x0):.1f},{base - 0.5 * (math.sin(math.pi * j / 160) ** 2 + math.sin(2 * math.pi * j / 160) ** 2) * scale:.1f}"
-        for j in range(161))
-
-    o = [head(w, h, "Probability density of a particle in a box, superposition of two states",
-              "A glowing probability density sloshes back and forth between the walls of an infinite potential "
-              "well as two energy eigenstates interfere.")]
-    o.append("<defs>" + GRID_DEFS)
-    o.append(f'<linearGradient id="fillg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{CYAN}" '
-             f'stop-opacity=".55"/><stop offset="1" stop-color="{CYAN}" stop-opacity=".02"/></linearGradient>')
-    o.append(f'<pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
-             f'<line x1="0" y1="0" x2="0" y2="6" stroke="{AMBER}" stroke-width="1.4"/></pattern>')
-    o.append("</defs>")
-    o.append(panel(w, h))
-    o.append(text(60, 32, "particle in an infinite well · n = 1 + 2", 14, MUTED))
-    o.append(text(1140, 34, "Ψ = (ψ_{1} + ψ_{2}) / √2   ·   P(x, t) = |Ψ|^{2}", 21, AMBER, "end", "s",
-                  'font-style="italic"'))
-    o.append(f'<rect x="44" y="46" width="16" height="{base - 46:.0f}" fill="url(#hatch)" opacity=".7"/>')
-    o.append(f'<rect x="1140" y="46" width="16" height="{base - 46:.0f}" fill="url(#hatch)" opacity=".7"/>')
-    o.append(f'<g stroke="{AMBER}" stroke-width="3"><line x1="60" y1="46" x2="60" y2="{base:.0f}"/>'
-             f'<line x1="1140" y1="46" x2="1140" y2="{base:.0f}"/></g>')
-    o.append(f'<line x1="60" y1="{base:.0f}" x2="1140" y2="{base:.0f}" stroke="#2a3a68" stroke-width="1"/>')
-    o.append(f'<path d="{avg}" fill="none" stroke="{TEXT}" stroke-width="1" stroke-dasharray="3 5" opacity=".4"/>')
-    o.append(f'<path d="{frames[0]}" fill="url(#fillg)" stroke="{CYAN}" stroke-width="2" stroke-linejoin="round">'
-             f'{animate("d", frames, dur)}</path>')
-    for xx, lab in ((60, "0"), (600, "L/2"), (1140, "L")):
-        o.append(f'<line x1="{xx}" y1="{base:.0f}" x2="{xx}" y2="{base + 5:.0f}" stroke="#2a3a68"/>')
-        o.append(text(xx, base + 22, lab, 14, MUTED, "middle", "s", 'font-style="italic"'))
-    o.append(text(60, 290, "dotted: time-averaged density · solid: the beat between ψ_{1} and ψ_{2}", 12, MUTED))
-    o.append(text(1140, 290, "ω = (E_{2} − E_{1}) / ħ = 3π^{2}ħ / 2mL^{2}", 12, MUTED, "end"))
-    o.append("</svg>\n")
-    write("wavefunction.svg", "\n".join(o))
-
-
 # ───────────────────────────── 5. Divider ─────────────────────────────
 def build_divider():
     w, h = 1200, 40
@@ -445,5 +390,4 @@ if __name__ == "__main__":
     build_hero()
     build_pendulum()
     build_kepler()
-    build_wave()
     build_divider()
