@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Keep the project sections of README.md in sync with GitHub.
 
-Pure standard library, no dependencies. Run by .github/workflows/update-readme.yml
+Pure standard library, no dependencies. Run by .github/workflows/update-pinned.yml
 (hourly, on push, or by hand). It rewrites only the text between marker comments:
 
     <!--STATS:START--> ... <!--STATS:END-->
@@ -96,9 +96,9 @@ def render_stats(repos):
     langs = sorted({r["language"] for r in repos if r.get("language")})
     lang_txt = ", ".join(langs) if langs else "–"
     return (
-        f"`public_repos = {len(repos)}` &nbsp;·&nbsp; "
-        f"`stars_earned = {stars}` &nbsp;·&nbsp; "
-        f"`languages = {lang_txt}`"
+        f"`N = {len(repos)}` systems &nbsp;·&nbsp; "
+        f"`Σ★ = {stars}` &nbsp;·&nbsp; "
+        f"`basis = {{{lang_txt}}}`"
     )
 
 
@@ -108,8 +108,8 @@ def render_pinned(repos, pinned_names):
     if not chosen:  # no token / nothing pinned → fall back to most recently pushed
         chosen = repos[:PINNED_LIMIT]
     if not chosen:
-        return "_Nothing here yet. The first public repo I publish will show up automatically._"
-    rows = ["| project | what it does | language | ★ | last updated |", "| :-- | :-- | :-- | --: | :-- |"]
+        return "_Vacuum state. The first public repo I publish will show up here automatically._"
+    rows = ["| system | what it does | basis | ★ | last perturbed |", "| :-- | :-- | :-- | --: | :-- |"]
     for r in chosen:
         rows.append(
             f"| [**{r['name']}**]({r['html_url']}) | {clean(r.get('description'))} "
@@ -121,11 +121,11 @@ def render_pinned(repos, pinned_names):
 
 def render_recent(repos):
     if not repos:
-        return "_No runs logged yet._"
+        return "_No events recorded yet._"
     lines = []
     for r in repos[:RECENT_LIMIT]:
         lang = f" · `{r['language']}`" if r.get("language") else ""
-        lines.append(f"- `{day(r.get('pushed_at'))}` &nbsp;[{r['name']}]({r['html_url']}){lang}")
+        lines.append(f"- `t = {day(r.get('pushed_at'))}` &nbsp;⟶&nbsp; [{r['name']}]({r['html_url']}){lang}")
     return "\n".join(lines)
 
 
