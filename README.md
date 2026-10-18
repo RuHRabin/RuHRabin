@@ -84,13 +84,13 @@ Before I look, an idea is a superposition of every way it could be wrong. Experi
 <sub>Measured straight from GitHub by a small script. Publish or update a repo and this table re-solves itself.</sub>
 
 <!--STATS:START-->
-`N = 14` systems &nbsp;·&nbsp; `Σ★ = 11` &nbsp;·&nbsp; `basis = {HTML, JavaScript, Kotlin, Python, Shell, TypeScript}`
+`N = 14` systems &nbsp;·&nbsp; `Σ★ = 12` &nbsp;·&nbsp; `basis = {HTML, JavaScript, Kotlin, Python, Shell, TypeScript}`
 <!--STATS:END-->
 
 <!--PINNED:START-->
 | system | what it does | basis | ★ | last perturbed |
 | :-- | :-- | :-- | --: | :-- |
-| [**earthpulse**](https://github.com/RuHRabin/earthpulse) | <sub>no description yet</sub> | `JavaScript` | 2 | 2026-10-18 |
+| [**earthpulse**](https://github.com/RuHRabin/earthpulse) | <sub>no description yet</sub> | `JavaScript` | 3 | 2026-10-17 |
 | [**xkb-avro**](https://github.com/RuHRabin/xkb-avro) | Native XKB keyboard layout for Bengali Avro Phonetic on Linux — no IBus, no Fcitx, no daemon required. | `Shell` | 1 | 2026-06-15 |
 | [**Gargantua**](https://github.com/RuHRabin/Gargantua) | A browser game inspired by Interstellar. Fly a small ship around a black hole, collect data, and get back to… | `TypeScript` | 0 | 2026-10-12 |
 <!--PINNED:END-->
@@ -98,9 +98,9 @@ Before I look, an idea is a superposition of every way it could be wrong. Experi
 ## `⟳` Recent events
 
 <!--RECENT:START-->
-- `t = 2026-10-18` &nbsp;⟶&nbsp; [ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io) · `HTML`
-- `t = 2026-10-18` &nbsp;⟶&nbsp; [Sol-Mesh](https://github.com/RuHRabin/Sol-Mesh) · `Kotlin`
-- `t = 2026-10-18` &nbsp;⟶&nbsp; [earthpulse](https://github.com/RuHRabin/earthpulse) · `JavaScript`
+- `t = 2026-10-17` &nbsp;⟶&nbsp; [earthpulse](https://github.com/RuHRabin/earthpulse) · `JavaScript`
+- `t = 2026-10-17` &nbsp;⟶&nbsp; [ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io) · `HTML`
+- `t = 2026-10-16` &nbsp;⟶&nbsp; [Sol-Mesh](https://github.com/RuHRabin/Sol-Mesh) · `Kotlin`
 - `t = 2026-10-15` &nbsp;⟶&nbsp; [3D-Website-Boilerplate-Designer-Doc](https://github.com/RuHRabin/3D-Website-Boilerplate-Designer-Doc) · `HTML`
 - `t = 2026-10-13` &nbsp;⟶&nbsp; [Schemify](https://github.com/RuHRabin/Schemify) · `Python`
 <!--RECENT:END-->
@@ -120,9 +120,9 @@ Before I look, an idea is a superposition of every way it could be wrong. Experi
 
 Ask me about **science** and **tech**.
 
-- [✉rabin@ruhrbin.site](mailto:rabin@ruhrbin.site)
-- [𝕏](https://x.com/RuHRabin)
-- [](https://www.facebook.com/RuHRabin)
+- ✉ &nbsp;[rabin@ruhrbin.site](mailto:rabin@ruhrbin.site)
+- 𝕏 &nbsp;[@RuHRabin](https://x.com/RuHRabin)
+- Facebook &nbsp;[M.RakibUlHasanRabin](https://www.facebook.com/M.RakibUlHasanRabin)
 
 <br>
 
