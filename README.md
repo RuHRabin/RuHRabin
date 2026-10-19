@@ -62,9 +62,9 @@ I like taking things apart to see how they actually work: a machine learning exp
 ## `⟳` Recent activity
 
 <!--RECENT:START-->
-- `2026-10-19` &nbsp;[Gargantua](https://github.com/RuHRabin/Gargantua) · `TypeScript`
-- `2026-10-19` &nbsp;[3D-Website-Boilerplate-Designer-Doc](https://github.com/RuHRabin/3D-Website-Boilerplate-Designer-Doc) · `HTML`
+- `2026-10-19` &nbsp;[ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io) · `HTML`
 - `2026-10-19` &nbsp;[earthpulse](https://github.com/RuHRabin/earthpulse) · `JavaScript`
+- `2026-10-19` &nbsp;[Gargantua](https://github.com/RuHRabin/Gargantua) · `TypeScript`
 <!--RECENT:END-->
 
 <p align="center"><img src="assets/wave-divider.svg" alt="" width="100%"></p>
