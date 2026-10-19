@@ -36,14 +36,14 @@ I like taking things apart to see how they actually work: a machine learning exp
 ## `Σ` Projects
 
 <!--STATS:START-->
-**14** repos &nbsp;·&nbsp; **11** ★ &nbsp;·&nbsp; HTML, JavaScript, Kotlin, Python, Shell, TypeScript
+**14** repos &nbsp;·&nbsp; **1** ★ &nbsp;·&nbsp; HTML, JavaScript, Kotlin, Python, Shell, TypeScript
 <!--STATS:END-->
 
 <!--PINNED:START-->
 | project | what it does | language | ★ | updated |
 | :-- | :-- | :-- | --: | :-- |
-| [**earthpulse**](https://github.com/RuHRabin/earthpulse) | <sub>no description yet</sub> | `JavaScript` | 2 | 2026-10-19 |
-| [**xkb-avro**](https://github.com/RuHRabin/xkb-avro) | Native XKB keyboard layout for Bengali Avro Phonetic on Linux — no IBus, no Fci… | `Shell` | 1 | 2026-06-15 |
+| [**earthpulse**](https://github.com/RuHRabin/earthpulse) | <sub>no description yet</sub> | `JavaScript` | 1 | 2026-10-19 |
+| [**xkb-avro**](https://github.com/RuHRabin/xkb-avro) | Native XKB keyboard layout for Bengali Avro Phonetic on Linux — no IBus, no Fci… | `Shell` | 0 | 2026-06-15 |
 | [**Gargantua**](https://github.com/RuHRabin/Gargantua) | A browser game inspired by Interstellar. Fly a small ship around a black hole,… | `TypeScript` | 0 | 2026-10-12 |
 <!--PINNED:END-->
 
@@ -54,16 +54,16 @@ I like taking things apart to see how they actually work: a machine learning exp
 <!--POPULAR:START-->
 | ★ Most starred | ⑂ Most forked | ◉ Most watched | ✦ Most popular |
 | :-- | :-- | :-- | :-- |
-| [**earthpulse**](https://github.com/RuHRabin/earthpulse) · `2` | – | [**xkb-avro**](https://github.com/RuHRabin/xkb-avro) · `1` | [**earthpulse**](https://github.com/RuHRabin/earthpulse) · `2` |
-| [**ruhrabin.github.io**](https://github.com/RuHRabin/ruhrabin.github.io) · `1` | – | – | [**xkb-avro**](https://github.com/RuHRabin/xkb-avro) · `2` |
-| [**Pixel-Perfect-Web**](https://github.com/RuHRabin/Pixel-Perfect-Web) · `1` | – | – | [**ruhrabin.github.io**](https://github.com/RuHRabin/ruhrabin.github.io) · `1` |
+| [**earthpulse**](https://github.com/RuHRabin/earthpulse) · `1` | – | [**xkb-avro**](https://github.com/RuHRabin/xkb-avro) · `1` | [**earthpulse**](https://github.com/RuHRabin/earthpulse) · `1` |
+| – | – | – | [**xkb-avro**](https://github.com/RuHRabin/xkb-avro) · `1` |
+| – | – | – | – |
 <!--POPULAR:END-->
 
 ## `⟳` Recent activity
 
 <!--RECENT:START-->
 - `2026-10-19` &nbsp;[earthpulse](https://github.com/RuHRabin/earthpulse) · `JavaScript`
-- `2026-10-18` &nbsp;[ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io) · `HTML`
+- `2026-10-19` &nbsp;[ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io) · `HTML`
 - `2026-10-18` &nbsp;[Sol-Mesh](https://github.com/RuHRabin/Sol-Mesh) · `Kotlin`
 <!--RECENT:END-->
 
