@@ -42,7 +42,7 @@ I like taking things apart to see how they actually work: a machine learning exp
 <!--PINNED:START-->
 | project | what it does | language | ★ | updated |
 | :-- | :-- | :-- | --: | :-- |
-| [**earthpulse**](https://github.com/RuHRabin/earthpulse) | <sub>no description yet</sub> | `JavaScript` | 1 | 2026-10-19 |
+| [**earthpulse**](https://github.com/RuHRabin/earthpulse) | <sub>no description yet</sub> | `JavaScript` | 1 | 2026-10-20 |
 | [**xkb-avro**](https://github.com/RuHRabin/xkb-avro) | Native XKB keyboard layout for Bengali Avro Phonetic on Linux — no IBus, no Fci… | `Shell` | 0 | 2026-06-15 |
 | [**Gargantua**](https://github.com/RuHRabin/Gargantua) | A browser game inspired by Interstellar. Fly a small ship around a black hole,… | `TypeScript` | 0 | 2026-10-19 |
 <!--PINNED:END-->
@@ -54,17 +54,17 @@ I like taking things apart to see how they actually work: a machine learning exp
 <!--POPULAR:START-->
 | ★ Most starred | ⑂ Most forked | ◉ Most watched | ✦ Most popular |
 | :-- | :-- | :-- | :-- |
-| [**earthpulse**](https://github.com/RuHRabin/earthpulse) · `1` | [**earthpulse**](https://github.com/RuHRabin/earthpulse) · `1` | [**Sol-Mesh**](https://github.com/RuHRabin/Sol-Mesh) · `1` | [**Sol-Mesh**](https://github.com/RuHRabin/Sol-Mesh) · `3` |
-| [**Sol-Mesh**](https://github.com/RuHRabin/Sol-Mesh) · `1` | [**Sol-Mesh**](https://github.com/RuHRabin/Sol-Mesh) · `1` | [**xkb-avro**](https://github.com/RuHRabin/xkb-avro) · `1` | [**earthpulse**](https://github.com/RuHRabin/earthpulse) · `2` |
+| [**Sol-Mesh**](https://github.com/RuHRabin/Sol-Mesh) · `1` | [**Sol-Mesh**](https://github.com/RuHRabin/Sol-Mesh) · `1` | [**Sol-Mesh**](https://github.com/RuHRabin/Sol-Mesh) · `1` | [**Sol-Mesh**](https://github.com/RuHRabin/Sol-Mesh) · `3` |
+| [**earthpulse**](https://github.com/RuHRabin/earthpulse) · `1` | [**earthpulse**](https://github.com/RuHRabin/earthpulse) · `1` | [**xkb-avro**](https://github.com/RuHRabin/xkb-avro) · `1` | [**earthpulse**](https://github.com/RuHRabin/earthpulse) · `2` |
 | – | – | – | [**xkb-avro**](https://github.com/RuHRabin/xkb-avro) · `1` |
 <!--POPULAR:END-->
 
 ## `⟳` Recent activity
 
 <!--RECENT:START-->
+- `2026-10-20` &nbsp;[Sol-Mesh](https://github.com/RuHRabin/Sol-Mesh) · `Kotlin`
+- `2026-10-20` &nbsp;[earthpulse](https://github.com/RuHRabin/earthpulse) · `JavaScript`
 - `2026-10-20` &nbsp;[ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io) · `HTML`
-- `2026-10-19` &nbsp;[earthpulse](https://github.com/RuHRabin/earthpulse) · `JavaScript`
-- `2026-10-19` &nbsp;[Gargantua](https://github.com/RuHRabin/Gargantua) · `TypeScript`
 <!--RECENT:END-->
 
 <p align="center"><img src="assets/wave-divider.svg" alt="" width="100%"></p>
