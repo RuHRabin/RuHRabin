@@ -36,7 +36,7 @@ I like taking things apart to see how they actually work: a machine learning exp
 ## `Σ` Projects
 
 <!--STATS:START-->
-**14** repos &nbsp;·&nbsp; **2** ★ &nbsp;·&nbsp; HTML, JavaScript, Kotlin, Python, Shell, TypeScript
+**15** repos &nbsp;·&nbsp; **2** ★ &nbsp;·&nbsp; HTML, JavaScript, Kotlin, Python, Shell, TypeScript
 <!--STATS:END-->
 
 <!--PINNED:START-->
@@ -54,17 +54,17 @@ I like taking things apart to see how they actually work: a machine learning exp
 <!--POPULAR:START-->
 | ★ Most starred | ⑂ Most forked | ◉ Most watched | ✦ Most popular |
 | :-- | :-- | :-- | :-- |
-| [**Sol-Mesh**](https://github.com/RuHRabin/Sol-Mesh) · `1` | [**Sol-Mesh**](https://github.com/RuHRabin/Sol-Mesh) · `1` | [**Sol-Mesh**](https://github.com/RuHRabin/Sol-Mesh) · `1` | [**Sol-Mesh**](https://github.com/RuHRabin/Sol-Mesh) · `3` |
-| [**earthpulse**](https://github.com/RuHRabin/earthpulse) · `1` | [**earthpulse**](https://github.com/RuHRabin/earthpulse) · `1` | [**xkb-avro**](https://github.com/RuHRabin/xkb-avro) · `1` | [**earthpulse**](https://github.com/RuHRabin/earthpulse) · `2` |
+| [**earthpulse**](https://github.com/RuHRabin/earthpulse) · `1` | [**earthpulse**](https://github.com/RuHRabin/earthpulse) · `1` | [**Sol-Mesh**](https://github.com/RuHRabin/Sol-Mesh) · `1` | [**Sol-Mesh**](https://github.com/RuHRabin/Sol-Mesh) · `3` |
+| [**Sol-Mesh**](https://github.com/RuHRabin/Sol-Mesh) · `1` | [**Sol-Mesh**](https://github.com/RuHRabin/Sol-Mesh) · `1` | [**xkb-avro**](https://github.com/RuHRabin/xkb-avro) · `1` | [**earthpulse**](https://github.com/RuHRabin/earthpulse) · `2` |
 | – | – | – | [**xkb-avro**](https://github.com/RuHRabin/xkb-avro) · `1` |
 <!--POPULAR:END-->
 
 ## `⟳` Recent activity
 
 <!--RECENT:START-->
-- `2026-10-20` &nbsp;[Sol-Mesh](https://github.com/RuHRabin/Sol-Mesh) · `Kotlin`
+- `2026-10-20` &nbsp;[ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io) · `JavaScript`
 - `2026-10-20` &nbsp;[earthpulse](https://github.com/RuHRabin/earthpulse) · `JavaScript`
-- `2026-10-20` &nbsp;[ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io) · `HTML`
+- `2026-10-20` &nbsp;[BIMI](https://github.com/RuHRabin/BIMI)
 <!--RECENT:END-->
 
 <p align="center"><img src="assets/wave-divider.svg" alt="" width="100%"></p>
