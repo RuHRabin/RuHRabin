@@ -36,7 +36,7 @@ I like taking things apart to see how they actually work: a machine learning exp
 ## `Σ` Projects
 
 <!--STATS:START-->
-**15** repos &nbsp;·&nbsp; **2** ★ &nbsp;·&nbsp; HTML, JavaScript, Kotlin, Python, Shell, TypeScript
+**16** repos &nbsp;·&nbsp; **2** ★ &nbsp;·&nbsp; HTML, JavaScript, Kotlin, Python, Shell, TypeScript
 <!--STATS:END-->
 
 <!--PINNED:START-->
@@ -63,8 +63,8 @@ I like taking things apart to see how they actually work: a machine learning exp
 
 <!--RECENT:START-->
 - `2026-10-24` &nbsp;[earthpulse](https://github.com/RuHRabin/earthpulse) · `JavaScript`
+- `2026-10-24` &nbsp;[Science](https://github.com/RuHRabin/Science) · `HTML`
 - `2026-10-24` &nbsp;[ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io) · `JavaScript`
-- `2026-10-21` &nbsp;[WebVid](https://github.com/RuHRabin/WebVid) · `HTML`
 <!--RECENT:END-->
 
 <p align="center"><img src="assets/wave-divider.svg" alt="" width="100%"></p>
