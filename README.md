@@ -42,7 +42,7 @@ I like taking things apart to see how they actually work: a machine learning exp
 <!--PINNED:START-->
 | project | what it does | language | ★ | updated |
 | :-- | :-- | :-- | --: | :-- |
-| [**earthpulse**](https://github.com/RuHRabin/earthpulse) | <sub>no description yet</sub> | `JavaScript` | 1 | 2026-10-23 |
+| [**earthpulse**](https://github.com/RuHRabin/earthpulse) | <sub>no description yet</sub> | `JavaScript` | 1 | 2026-10-24 |
 | [**xkb-avro**](https://github.com/RuHRabin/xkb-avro) | Native XKB keyboard layout for Bengali Avro Phonetic on Linux — no IBus, no Fci… | `Shell` | 0 | 2026-06-15 |
 | [**Gargantua**](https://github.com/RuHRabin/Gargantua) | A browser game inspired by Interstellar. Fly a small ship around a black hole,… | `TypeScript` | 0 | 2026-10-19 |
 <!--PINNED:END-->
@@ -62,8 +62,8 @@ I like taking things apart to see how they actually work: a machine learning exp
 ## `⟳` Recent activity
 
 <!--RECENT:START-->
-- `2026-10-23` &nbsp;[ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io) · `JavaScript`
-- `2026-10-23` &nbsp;[earthpulse](https://github.com/RuHRabin/earthpulse) · `JavaScript`
+- `2026-10-24` &nbsp;[ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io) · `JavaScript`
+- `2026-10-24` &nbsp;[earthpulse](https://github.com/RuHRabin/earthpulse) · `JavaScript`
 - `2026-10-21` &nbsp;[WebVid](https://github.com/RuHRabin/WebVid) · `HTML`
 <!--RECENT:END-->
 
