@@ -1,7 +1,3 @@
-<!-- ═══════════════════════════════════════════════════════════════
-     RuHRabin · Profile README
-     ═══════════════════════════════════════════════════════════════ -->
-
 <div align="center">
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=230&color=gradient&customColorList=12,14,18,24&text=Rabin%20%C2%B7%20RuHRabin&fontSize=48&fontColor=ffffff&fontAlignY=36&animation=fadeIn&desc=Curiosity%20%E2%86%92%20Experiments%20%E2%86%92%20Understanding&descSize=18&descAlignY=58" alt="Rabin · RuHRabin banner" />
