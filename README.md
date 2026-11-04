@@ -130,8 +130,8 @@ Got an idea, a bug, or a wild "what if" experiment? I'd love to hear it.
 
 <div align="center">
 
-| 🌐 Website | 𝕏 X | 📘 Facebook | ✉️ Email |
-|:---:|:---:|:---:|:---:|
+| 🌐 Website | 𝕏 X | ✉️ Email |
+|:---:|:---:|:---:|
 | [ruhrbin.site](https://ruhrbin.site) | [@RuHRabin](https://x.com/RuHRabin) | [rabin@ruhrbin.site](mailto:rabin@ruhrbin.site) |
 
 <br/>
