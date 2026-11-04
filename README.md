@@ -14,7 +14,6 @@
 
 [![Website](https://img.shields.io/badge/Website-rabin.ruhrbin.site-7AA2F7?style=for-the-badge&logo=safari&logoColor=white)](https://rabin.ruhrbin.site)
 [![X](https://img.shields.io/badge/X-@RuHRabin-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/RuHRabin)
-[![Facebook](https://img.shields.io/badge/Facebook-RuHRabin-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/RuHRabin)
 [![Email](https://img.shields.io/badge/Email-rabin@ruhrbin.site-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rabin@ruhrbin.site)
 
 <br/>
@@ -52,70 +51,6 @@ I'm a **learner driven by curiosity**, passionate about solving complex problems
 - 💻 Tech
 - 🐧 Linux & shell workflows
 - 🕹️ Interactive web experiments
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-## 🚀 &nbsp;Featured Projects
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### 🌍 [earthpulse](https://github.com/RuHRabin/earthpulse)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Stars](https://img.shields.io/github/stars/RuHRabin/earthpulse?style=flat-square&color=E0AF68&labelColor=1a1b27)
-
-My most-starred project, a window onto a living planet.
-
-</td>
-<td width="33%" valign="top">
-
-### ⌨️ [xkb-avro](https://github.com/RuHRabin/xkb-avro)
-![Shell](https://img.shields.io/badge/Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![Stars](https://img.shields.io/github/stars/RuHRabin/xkb-avro?style=flat-square&color=E0AF68&labelColor=1a1b27)
-
-Native XKB layout for **Bengali Avro Phonetic** on Linux, with no IBus, no Fcitx and no daemon.
-
-</td>
-<td width="33%" valign="top">
-
-### 🕳️ [Gargantua](https://github.com/RuHRabin/Gargantua)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
-
-An *Interstellar*-inspired browser game. Fly around a black hole and get back to the Endurance before Earth runs out of time.
-
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-
-### 📡 [Sol-Mesh](https://github.com/RuHRabin/Sol-Mesh)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
-
-A Kotlin project in active development.
-
-</td>
-<td width="33%" valign="top">
-
-### 🎨 [Pixel-Perfect-Web](https://github.com/RuHRabin/Pixel-Perfect-Web)
-![HTML](https://img.shields.io/badge/HTML%2FCSS-E34F26?style=flat-square&logo=html5&logoColor=white)
-![Stars](https://img.shields.io/github/stars/RuHRabin/Pixel-Perfect-Web?style=flat-square&color=E0AF68&labelColor=1a1b27)
-
-Front-end craft, one pixel at a time.
-
-</td>
-<td width="33%" valign="top">
-
-### 🌐 [ruhrabin.github.io](https://github.com/RuHRabin/ruhrabin.github.io)
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
-![Stars](https://img.shields.io/github/stars/RuHRabin/ruhrabin.github.io?style=flat-square&color=E0AF68&labelColor=1a1b27)
-
-My personal corner of the web.
 
 </td>
 </tr>
@@ -197,7 +132,7 @@ Got an idea, a bug, or a wild "what if" experiment? I'd love to hear it.
 
 | 🌐 Website | 𝕏 X | 📘 Facebook | ✉️ Email |
 |:---:|:---:|:---:|:---:|
-| [rabin.ruhrbin.site](https://rabin.ruhrbin.site) | [@RuHRabin](https://x.com/RuHRabin) | [RuHRabin](https://www.facebook.com/RuHRabin) | [rabin@ruhrbin.site](mailto:rabin@ruhrbin.site) |
+| [ruhrbin.site](https://ruhrbin.site) | [@RuHRabin](https://x.com/RuHRabin) | [rabin@ruhrbin.site](mailto:rabin@ruhrbin.site) |
 
 <br/>
 
