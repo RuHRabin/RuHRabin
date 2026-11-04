@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1108" height="310" viewBox="0 0 1108 310" role="img" aria-label="GitHub Overview">
+<title>GitHub Overview</title>
+<rect width="100%" height="100%" rx="16" fill="#1a1b27"/>
+<style>
+text { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.title { fill: #c0caf5; font-size: 20px; font-weight: 700; }
+.label { fill: #a9b1d6; font-size: 12px; }
+.value { fill: #c0caf5; font-size: 25px; font-weight: 700; }
+.small { fill: #a9b1d6; font-size: 11px; }
+</style>
+<text x="28" y="36" class="title">GitHub Overview · RuHRabin</text><rect x="28" y="52" width="250" height="108" rx="12" fill="#24283b"/><rect x="28" y="52" width="4" height="108" rx="2" fill="#7aa2f7"/><text x="46" y="82" class="label">PUBLIC REPOSITORIES</text><text x="46" y="122" class="value">14</text><rect x="298" y="52" width="250" height="108" rx="12" fill="#24283b"/><rect x="298" y="52" width="4" height="108" rx="2" fill="#bb9af7"/><text x="316" y="82" class="label">FOLLOWERS</text><text x="316" y="122" class="value">4</text><rect x="568" y="52" width="250" height="108" rx="12" fill="#24283b"/><rect x="568" y="52" width="4" height="108" rx="2" fill="#9ece6a"/><text x="586" y="82" class="label">TOTAL STARS</text><text x="586" y="122" class="value">6</text><rect x="838" y="52" width="250" height="108" rx="12" fill="#24283b"/><rect x="838" y="52" width="4" height="108" rx="2" fill="#e0af68"/><text x="856" y="82" class="label">TOTAL FORKS</text><text x="856" y="122" class="value">0</text><rect x="28" y="176" width="250" height="108" rx="12" fill="#24283b"/><rect x="28" y="176" width="4" height="108" rx="2" fill="#7aa2f7"/><text x="46" y="206" class="label">COMMITS · 12 MONTHS</text><text x="46" y="246" class="value">390</text><rect x="298" y="176" width="250" height="108" rx="12" fill="#24283b"/><rect x="298" y="176" width="4" height="108" rx="2" fill="#bb9af7"/><text x="316" y="206" class="label">PULL REQUESTS</text><text x="316" y="246" class="value">5</text><rect x="568" y="176" width="250" height="108" rx="12" fill="#24283b"/><rect x="568" y="176" width="4" height="108" rx="2" fill="#9ece6a"/><text x="586" y="206" class="label">ISSUES</text><text x="586" y="246" class="value">0</text><rect x="838" y="176" width="250" height="108" rx="12" fill="#24283b"/><rect x="838" y="176" width="4" height="108" rx="2" fill="#e0af68"/><text x="856" y="206" class="label">CONTRIBUTIONS</text><text x="856" y="246" class="value">438</text>
+</svg>
