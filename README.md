@@ -8,7 +8,7 @@
 
 <br/>
 
-[![Website](https://img.shields.io/badge/Website-rabin.ruhrbin.site-7AA2F7?style=for-the-badge&logo=safari&logoColor=white)](https://rabin.ruhrbin.site)
+[![Website](https://img.shields.io/badge/Website-rabin.ruhrbin.site-7AA2F7?style=for-the-badge&logo=safari&logoColor=white)](https://ruhrbin.site)
 [![X](https://img.shields.io/badge/X-@RuHRabin-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/RuHRabin)
 [![Email](https://img.shields.io/badge/Email-rabin@ruhrbin.site-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rabin@ruhrbin.site)
 
