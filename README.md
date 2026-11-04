@@ -8,14 +8,14 @@
 
 <br/>
 
-[![Website](https://img.shields.io/badge/Website-rabin.ruhrbin.site-7AA2F7?style=for-the-badge&logo=safari&logoColor=white)](https://ruhrbin.site)
+[![Website](https://img.shields.io/badge/Website-ruhrbin.site-7AA2F7?style=for-the-badge&logo=safari&logoColor=white)](https://ruhrbin.site)
 [![X](https://img.shields.io/badge/X-@RuHRabin-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/RuHRabin)
-[![Email](https://img.shields.io/badge/Email-rabin@ruhrbin.site-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rabin@ruhrbin.site)
+[![Email](https://img.shields.io/badge/Email-rabin%40ruhrbin.site-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rabin@ruhrbin.site)
 
 <br/>
 
 ![Followers](https://img.shields.io/github/followers/RuHRabin?label=Followers&style=flat-square&color=7AA2F7&labelColor=1a1b27)
-![Repos](https://img.shields.io/badge/Repositories-15-9ECE6A?style=flat-square&labelColor=1a1b27)
+![Repositories](https://img.shields.io/badge/Repositories-15-9ECE6A?style=flat-square&labelColor=1a1b27)
 ![Status](https://img.shields.io/badge/Status-%F0%9F%8E%AF%20Focusing-BB9AF7?style=flat-square&labelColor=1a1b27)
 ![Developer Program](https://img.shields.io/badge/GitHub-Developer%20Program-E0AF68?style=flat-square&logo=github&labelColor=1a1b27)
 
@@ -64,15 +64,15 @@ I'm a **learner driven by curiosity**, passionate about solving complex problems
 
 <div align="center">
 
-**Machine Learning &amp; Data**
+**Machine Learning & Data**
 
 <img src="https://skillicons.dev/icons?i=py,pytorch,tensorflow,sklearn&theme=dark" alt="ML stack" />
 
-**Web &amp; Apps**
+**Web & Apps**
 
 <img src="https://skillicons.dev/icons?i=js,ts,react,vite,threejs,html,css,kotlin&theme=dark" alt="Web stack" />
 
-**Tools &amp; Environment**
+**Tools & Environment**
 
 <img src="https://skillicons.dev/icons?i=linux,bash,git,github&theme=dark" alt="Tools" />
 
@@ -84,16 +84,31 @@ I'm a **learner driven by curiosity**, passionate about solving complex problems
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=RuHRabin&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&count_private=true" alt="GitHub stats" />
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RuHRabin&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&langs_count=8" alt="Top languages" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/overview.dark.svg" />
+  <img src="./assets/overview.light.svg" width="100%" alt="GitHub overview statistics" />
+</picture>
 
 <br/>
 
-<img src="https://github-readme-streak-stats.demolab.com?user=RuHRabin&theme=tokyonight&hide_border=true&border_radius=12" alt="Contribution streak" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/languages.dark.svg" />
+  <img src="./assets/languages.light.svg" width="100%" alt="Top programming languages" />
+</picture>
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=RuHRabin&theme=tokyo-night&hide_border=true&area=true&radius=12" alt="Contribution graph" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions.dark.svg" />
+  <img src="./assets/contributions.light.svg" width="100%" alt="Contribution calendar and streak" />
+</picture>
+
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/momentum.dark.svg" />
+  <img src="./assets/momentum.light.svg" width="100%" alt="Weekly GitHub contribution activity graph" />
+</picture>
 
 </div>
 
@@ -103,8 +118,8 @@ I'm a **learner driven by curiosity**, passionate about solving complex problems
 
 ```python
 class Rabin:
-    focus   = ["machine learning", "simulation"]
-    stack   = ["python", "bash", "pytorch", "tensorflow", "scikit-learn", "linux", "git"]
+    focus = ["machine learning", "simulation"]
+    stack = ["python", "bash", "pytorch", "tensorflow", "scikit-learn", "linux", "git"]
     mindset = "break it, then rebuild it better"
 
     def day(self):
