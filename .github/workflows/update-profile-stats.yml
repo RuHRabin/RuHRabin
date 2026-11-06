@@ -45,5 +45,12 @@ jobs:
             echo "No statistics changes to commit."
           else
             git commit -m "chore: update profile statistics"
-            git push
+            # main may have moved while this job ran; rebase onto it, then push.
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push && exit 0
+              echo "Push attempt $attempt failed, retrying..."
+              sleep 5
+            done
+            echo "Could not push after 3 attempts." >&2
+            exit 1
           fi
