@@ -16,7 +16,7 @@
 
 ![Followers](https://img.shields.io/github/followers/RuHRabin?label=Followers&style=flat-square&color=7AA2F7&labelColor=1a1b27)
 ![Repositories](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FRuHRabin&query=%24.public_repos&label=Repositories&style=flat-square&color=9ECE6A&labelColor=1a1b27)
-![Status](https://img.shields.io/badge/Status-%F0%9F%8E%AF%20Focusing-BB9AF7?style=flat-square&labelColor=1a1b27)
+<img src="./assets/status.svg" alt="Status" />
 ![Developer Program](https://img.shields.io/badge/GitHub-Developer%20Program-E0AF68?style=flat-square&logo=github&labelColor=1a1b27)
 
 </div>
