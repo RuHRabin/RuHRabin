@@ -2,6 +2,7 @@
 """Generate self-hosted GitHub profile SVG cards using GitHub GraphQL."""
 import json
 import os
+import re
 import sys
 import urllib.request
 import urllib.error
@@ -26,6 +27,7 @@ QUERY = """
 query($login: String!, $from: DateTime!, $to: DateTime!) {
   user(login: $login) {
     login
+    status { emoji emojiHTML message }
     followers { totalCount }
     repositories(ownerAffiliations: OWNER, first: 100, privacy: PUBLIC,
       isFork: false, orderBy: {field: UPDATED_AT, direction: DESC}) {
@@ -99,8 +101,35 @@ def metric_card(x, y, label, value, accent, t):
             f'<text x="{x+18}" y="{y+30}" class="label">{escape(label)}</text>'
             f'<text x="{x+18}" y="{y+70}" class="value">{escape(str(value))}</text>')
 
+def status_badge(user):
+    """Write assets/status.svg from the live GitHub profile status."""
+    st = user.get("status") or {}
+    message = (st.get("message") or "").strip() or "Focusing"
+    emoji = re.sub(r"<[^>]+>", "", st.get("emojiHTML") or "").strip()
+    if not st and not emoji:
+        emoji = "\U0001F3AF"          # default when no profile status is set
+    message = message[:40]
+    text = (emoji + " " + message).strip()
+    label = "Status"
+    lw = 12 + 7 * len(label)
+    rw = 14 + int(6.6 * (len(message) + (2 if emoji else 0)))
+    w = lw + rw
+    doc = (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="20" role="img" '
+        f'aria-label="{escape(label)}: {escape(text)}">'
+        f'<title>{escape(label)}: {escape(text)}</title>'
+        f'<rect width="{lw}" height="20" fill="#1a1b27"/>'
+        f'<rect x="{lw}" width="{rw}" height="20" fill="#bb9af7"/>'
+        '<g font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11" text-anchor="middle">'
+        f'<text x="{lw/2:.1f}" y="14" fill="#ffffff">{escape(label)}</text>'
+        f'<text x="{lw+rw/2:.1f}" y="14" fill="#1a1b27" font-weight="bold">{escape(text)}</text>'
+        '</g></svg>'
+    )
+    (OUT / "status.svg").write_text(doc, encoding="utf-8")
+
 def main():
     user = fetch()
+    status_badge(user)
     repos = user["repositories"]["nodes"]
     cc = user["contributionsCollection"]
     calendar = cc["contributionCalendar"]
@@ -222,7 +251,7 @@ def main():
         return out
     svg("momentum", "GitHub Contribution Momentum", 1108, 310, momentum)
 
-    print("Generated 8 SVG cards in assets/.")
+    print("Generated 9 SVG files in assets/.")
 
 if __name__ == "__main__":
     try:
