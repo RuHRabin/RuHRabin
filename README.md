@@ -1,154 +1,43 @@
-<div align="center">
+# Rabin
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=230&color=gradient&customColorList=12,14,18,24&text=Rabin%20%C2%B7%20RuHRabin&fontSize=48&fontColor=ffffff&fontAlignY=36&animation=fadeIn&desc=Curiosity%20%E2%86%92%20Experiments%20%E2%86%92%20Understanding&descSize=18&descAlignY=58" alt="Rabin · RuHRabin banner" />
+I build things to understand how they work. My current interests are **machine learning, physics simulations, and practical software experiments**.
 
-<a href="https://github.com/RuHRabin">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=7AA2F7&center=true&vCenter=true&width=720&lines=A+lifelong+learner+in+machine+learning+%26+simulation;I+take+things+apart+to+see+how+they+really+work;Break+it.+Rebuild+it+better.;%E2%88%82(loss)%2F%E2%88%82t+%3C+0++%C2%B7++%E2%88%82(curiosity)%2F%E2%88%82t+%3E+0" alt="Typing animation" />
-</a>
+- **Working on:** ML experiments, interactive simulations, and small tools
+- **Interested in:** Python, Linux, scientific computing, and the web
+- **Website:** [ruhrbin.site](https://ruhrbin.site)
+- **Contact:** [rabin@ruhrbin.site](mailto:rabin@ruhrbin.site)
+- **X:** [@RuHRabin](https://x.com/RuHRabin)
 
-<br/>
+## Tools
 
-[![Website](https://img.shields.io/badge/Website-ruhrbin.site-7AA2F7?style=for-the-badge&logo=safari&logoColor=white)](https://ruhrbin.site)
-[![X](https://img.shields.io/badge/X-@RuHRabin-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/RuHRabin)
-[![Email](https://img.shields.io/badge/Email-rabin%40ruhrbin.site-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rabin@ruhrbin.site)
+**Core:** Python · Linux · Bash · Git
 
-<br/>
+**Exploring:** PyTorch · TensorFlow · scikit-learn · JavaScript · TypeScript · React · Three.js · Kotlin
 
-![Followers](https://img.shields.io/github/followers/RuHRabin?label=Followers&style=flat-square&color=7AA2F7&labelColor=1a1b27)
-![Repositories](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FRuHRabin&query=%24.public_repos&label=Repositories&style=flat-square&color=9ECE6A&labelColor=1a1b27)
-<img src="./assets/status.svg" alt="Status" />
-![Developer Program](https://img.shields.io/badge/GitHub-Developer%20Program-E0AF68?style=flat-square&logo=github&labelColor=1a1b27)
+## GitHub activity
 
-</div>
-
-<br/>
-
-## 👋 &nbsp;Hello, I'm Rabin
-
-> *"I like taking things apart to see how they actually work: a machine learning experiment, a simulation, the 'let's see what happens' kind of programming."*
-
-I'm a **learner driven by curiosity**, passionate about solving complex problems and committed to continuous growth. Most of my time goes into **machine learning** and **simulation**, plus the occasional game, keyboard layout or browser experiment that I can't resist building.
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🔭 &nbsp;Currently
-- 🧠 Exploring **machine learning** experiments
-- 🌌 Building **physics & space simulations**
-- 🛠️ Shipping small tools I actually use
-- 🎯 Status: **Focusing**
-
-</td>
-<td width="50%" valign="top">
-
-### 💬 &nbsp;Ask me about
-- 🔬 Science
-- 💻 Tech
-- 🐧 Linux & shell workflows
-- 🕹️ Interactive web experiments
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-
-[**→ See all repositories**](https://github.com/RuHRabin?tab=repositories)
-
-</div>
-
-<br/>
-
-## 🧰 &nbsp;Tech Stack
-
-<div align="center">
-
-**Machine Learning & Data**
-
-<img src="https://skillicons.dev/icons?i=py,pytorch,tensorflow,sklearn&theme=dark" alt="ML stack" />
-
-**Web & Apps**
-
-<img src="https://skillicons.dev/icons?i=js,ts,react,vite,threejs,html,css,kotlin&theme=dark" alt="Web stack" />
-
-**Tools & Environment**
-
-<img src="https://skillicons.dev/icons?i=linux,bash,git,github&theme=dark" alt="Tools" />
-
-</div>
-
-<br/>
-
-## 📊 &nbsp;GitHub Stats
-
-<div align="center">
+These cards are generated from GitHub data and refreshed automatically.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/overview.dark.svg" />
-  <img src="./assets/overview.light.svg" width="100%" alt="GitHub overview statistics" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/overview.dark.svg">
+  <img src="assets/overview.light.svg" width="100%" alt="GitHub overview">
 </picture>
-
-<br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/languages.dark.svg" />
-  <img src="./assets/languages.light.svg" width="100%" alt="Top programming languages" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/languages.dark.svg">
+  <img src="assets/languages.light.svg" width="100%" alt="Most-used languages across public repositories">
 </picture>
-
-<br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions.dark.svg" />
-  <img src="./assets/contributions.light.svg" width="100%" alt="Contribution calendar and streak" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/contributions.dark.svg">
+  <img src="assets/contributions.light.svg" width="100%" alt="Contribution activity over the last year">
 </picture>
-
-<br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/momentum.dark.svg" />
-  <img src="./assets/momentum.light.svg" width="100%" alt="Weekly GitHub contribution activity graph" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/momentum.dark.svg">
+  <img src="assets/momentum.light.svg" width="100%" alt="Weekly contribution activity">
 </picture>
 
-</div>
+## Find me
 
-<br/>
-
-## 🧪 &nbsp;My Philosophy
-
-```python
-class Rabin:
-    focus = ["machine learning", "simulation"]
-    stack = ["python", "bash", "pytorch", "tensorflow", "scikit-learn", "linux", "git"]
-    mindset = "break it, then rebuild it better"
-
-    def day(self):
-        while self.curious:
-            self.experiment()
-            self.learn()
-            self.ship()
-
-    @property
-    def curious(self) -> bool:
-        return True   # ∂(curiosity)/∂t > 0
-```
-
-<br/>
-
-## 🤝 &nbsp;Let's Connect
-
-Got an idea, a bug, or a wild "what if" experiment? I'd love to hear it.
-
-<div align="center">
-
-| 🌐 Website | 𝕏 | ✉️ Email |
-|:---:|:---:|:---:|
-| [ruhrbin.site](https://ruhrbin.site) | [@RuHRabin](https://x.com/RuHRabin) | [rabin@ruhrbin.site](mailto:rabin@ruhrbin.site) |
-
-<br/>
-
-⭐ *If something here helped or inspired you, a star on the repo means a lot.* ⭐
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&color=gradient&customColorList=12,14,18,24&section=footer" alt="footer wave" />
-
-</div>
+[Website](https://ruhrbin.site) · [GitHub](https://github.com/RuHRabin) · [X](https://x.com/RuHRabin) · [Email](mailto:rabin@ruhrbin.site)
