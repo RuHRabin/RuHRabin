@@ -2,6 +2,10 @@
 
 # Hey, I'm Rabin 👋
 
+<picture>
+  <img src="assets/an.gif" width="100%" alt="RUHRABIN GIF">
+</picture>
+
 ### I build things to understand how they work.
 
 **Machine learning · Physics simulations · Practical software experiments**
