@@ -3,7 +3,7 @@
 # Hey, I'm Rabin 👋
 
 <picture>
-  <img src="assets/an.gif" width="100%" alt="RUHRABIN GIF">
+  <img src="assets/an.gif" height="300" width="100%" alt="RUHRABIN GIF">
 </picture>
 
 ### I build things to understand how they work.
