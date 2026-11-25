@@ -52,28 +52,6 @@ I'm also interested in **AI-assisted development** and using vibe coding to prot
 
 ---
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/overview.dark.svg">
-  <img src="assets/overview.light.svg" width="100%" alt="GitHub overview">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/languages.dark.svg">
-  <img src="assets/languages.light.svg" width="100%" alt="Most-used languages across public repositories">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/contributions.dark.svg">
-  <img src="assets/contributions.light.svg" width="100%" alt="Contribution activity over the last year">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/momentum.dark.svg">
-  <img src="assets/momentum.light.svg" width="100%" alt="Weekly contribution activity">
-</picture>
-
-
-
 <div align="center">
 
 *Stay curious. Build, break, understand, repeat.*
