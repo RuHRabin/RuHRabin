@@ -2,10 +2,6 @@
 
 # Hey, I'm Rabin 👋
 
-<picture>
-  <img src="assets/an.gif" height="300" width="100%" alt="RUHRABIN GIF">
-</picture>
-
 ### I build things to understand how they work.
 
 **Machine learning · Physics simulations · Practical software experiments**
@@ -57,3 +53,8 @@ I'm also interested in **AI-assisted development** and using vibe coding to prot
 *Stay curious. Build, break, understand, repeat.*
 
 </div>
+
+
+<picture>
+  <img src="assets/an.gif" height="300" width="100%" alt="RUHRABIN GIF">
+</picture>
